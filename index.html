@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Introduction to Psychological Statistics</title>
+  <meta name="description" content="Introduction to Psychological Statistics" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Introduction to Psychological Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction to Psychological Statistics" />
+  
+  
+  
+
+<meta name="author" content="A.D.Perez, PhD" />
+
+
+<meta name="date" content="2024-08-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="introduction-to-r-and-r-studio.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/rglWebGL-binding-1.3.1/rglWebGL.js"></script>
+<link href="libs/rglwidgetClass-1.3.1/rgl.css" rel="stylesheet" />
+<script src="libs/rglwidgetClass-1.3.1/rglClass.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/utils.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/buffer.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/subscenes.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/shaders.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/shadersrc.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/textures.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/projection.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/mouse.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/init.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/pieces.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/draw.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/controls.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/selection.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/rglTimer.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/pretty.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/axes.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.1/animation.src.js"></script>
+<script src="libs/CanvasMatrix4-1.3.1/CanvasMatrix.src.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p class="toc-title">Table of Contents</p>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to the Online Book for Psychological Statistics</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#understanding-people-through-data"><i class="fa fa-check"></i><b>0.1</b> Understanding People Through Data</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#what-you-will-learn"><i class="fa fa-check"></i><b>0.2</b> What You Will Learn</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#emphasis-on-psychological-research"><i class="fa fa-check"></i><b>0.3</b> Emphasis on Psychological Research</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#hands-on-learning-with-r-and-r-studio"><i class="fa fa-check"></i><b>0.4</b> Hands-On Learning with R and R Studio</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html"><i class="fa fa-check"></i><b>1</b> Introduction to R and R Studio</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#what-is-r"><i class="fa fa-check"></i><b>1.1</b> What is R?</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#features-of-r"><i class="fa fa-check"></i><b>1.1.1</b> Features of R</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#what-is-r-studio"><i class="fa fa-check"></i><b>1.2</b> What is R Studio?</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#why-use-r-studio"><i class="fa fa-check"></i><b>1.2.1</b> Why Use R Studio?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#r-and-r-studio-in-psychological-research"><i class="fa fa-check"></i><b>1.3</b> R and R Studio in Psychological Research</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r"><i class="fa fa-check"></i><b>1.4</b> Installing R</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r-on-windows"><i class="fa fa-check"></i><b>1.4.1</b> Installing R on Windows</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r-on-macos"><i class="fa fa-check"></i><b>1.4.2</b> Installing R on macOS</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#verify-installation"><i class="fa fa-check"></i><b>1.4.3</b> Verify Installation</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r-studio"><i class="fa fa-check"></i><b>1.5</b> Installing R Studio</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#before-you-install"><i class="fa fa-check"></i><b>1.5.1</b> Before You Install</a></li>
+<li class="chapter" data-level="1.5.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r-studio-on-windows"><i class="fa fa-check"></i><b>1.5.2</b> Installing R Studio on Windows</a></li>
+<li class="chapter" data-level="1.5.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#installing-r-studio-on-macos"><i class="fa fa-check"></i><b>1.5.3</b> Installing R Studio on macOS</a></li>
+<li class="chapter" data-level="1.5.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#verify-installation-1"><i class="fa fa-check"></i><b>1.5.4</b> Verify Installation</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#understanding-the-r-studio-interface"><i class="fa fa-check"></i><b>1.6</b> Understanding the R Studio Interface</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#the-r-studio-layout"><i class="fa fa-check"></i><b>1.6.1</b> The R Studio Layout</a></li>
+<li class="chapter" data-level="1.6.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#purpose-of-each-pane"><i class="fa fa-check"></i><b>1.6.2</b> Purpose of Each Pane</a></li>
+<li class="chapter" data-level="1.6.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#navigating-and-customizing-the-interface"><i class="fa fa-check"></i><b>1.6.3</b> Navigating and Customizing the Interface</a></li>
+<li class="chapter" data-level="1.6.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#best-practices"><i class="fa fa-check"></i><b>1.6.4</b> Best Practices</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#basics-of-using-r-studio"><i class="fa fa-check"></i><b>1.7</b> Basics of Using R Studio</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#creating-and-saving-r-scripts"><i class="fa fa-check"></i><b>1.7.1</b> Creating and Saving R Scripts</a></li>
+<li class="chapter" data-level="1.7.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#writing-and-executing-code"><i class="fa fa-check"></i><b>1.7.2</b> Writing and Executing Code</a></li>
+<li class="chapter" data-level="1.7.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#importing-data"><i class="fa fa-check"></i><b>1.7.3</b> Importing Data</a></li>
+<li class="chapter" data-level="1.7.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#using-r-markdown-for-assignments"><i class="fa fa-check"></i><b>1.7.4</b> Using R Markdown for Assignments</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#using-r-markdown-for-assignments-1"><i class="fa fa-check"></i><b>1.8</b> Using R Markdown for Assignments</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#what-is-r-markdown-1"><i class="fa fa-check"></i><b>1.8.1</b> What is R Markdown?</a></li>
+<li class="chapter" data-level="1.8.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#benefits-of-using-r-markdown"><i class="fa fa-check"></i><b>1.8.2</b> Benefits of Using R Markdown</a></li>
+<li class="chapter" data-level="1.8.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#basic-structure-of-an-r-markdown-document"><i class="fa fa-check"></i><b>1.8.3</b> Basic Structure of an R Markdown Document</a></li>
+<li class="chapter" data-level="1.8.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#knitting-documents"><i class="fa fa-check"></i><b>1.8.4</b> Knitting Documents</a></li>
+<li class="chapter" data-level="1.8.5" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#best-practices-1"><i class="fa fa-check"></i><b>1.8.5</b> Best Practices</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#best-practices-2"><i class="fa fa-check"></i><b>1.9</b> Best Practices</a>
+<ul>
+<li class="chapter" data-level="1.9.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#keep-scripts-organized"><i class="fa fa-check"></i><b>1.9.1</b> Keep Scripts Organized</a></li>
+<li class="chapter" data-level="1.9.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#comment-your-code"><i class="fa fa-check"></i><b>1.9.2</b> Comment Your Code</a></li>
+<li class="chapter" data-level="1.9.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#use-version-control"><i class="fa fa-check"></i><b>1.9.3</b> Use Version Control</a></li>
+<li class="chapter" data-level="1.9.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#regularly-save-and-backup-your-work"><i class="fa fa-check"></i><b>1.9.4</b> Regularly Save and Backup Your Work</a></li>
+<li class="chapter" data-level="1.9.5" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#write-readable-and-maintainable-code"><i class="fa fa-check"></i><b>1.9.5</b> Write Readable and Maintainable Code</a></li>
+<li class="chapter" data-level="1.9.6" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#document-your-processes"><i class="fa fa-check"></i><b>1.9.6</b> Document Your Processes</a></li>
+<li class="chapter" data-level="1.9.7" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#knit-documents-regularly"><i class="fa fa-check"></i><b>1.9.7</b> Knit Documents Regularly</a></li>
+<li class="chapter" data-level="1.9.8" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#optimize-workflow-in-r-studio"><i class="fa fa-check"></i><b>1.9.8</b> Optimize Workflow in R Studio</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#chapter-summary"><i class="fa fa-check"></i><b>1.10</b> Chapter Summary</a></li>
+<li class="chapter" data-level="1.11" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#exercises"><i class="fa fa-check"></i><b>1.11</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="1.11.1" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#exercise-1-familiarization-with-r-studio"><i class="fa fa-check"></i><b>1.11.1</b> Exercise 1: Familiarization with R Studio</a></li>
+<li class="chapter" data-level="1.11.2" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#exercise-2-basic-data-entry-and-operation"><i class="fa fa-check"></i><b>1.11.2</b> Exercise 2: Basic Data Entry and Operation</a></li>
+<li class="chapter" data-level="1.11.3" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#exercise-3-introduction-to-r-markdown"><i class="fa fa-check"></i><b>1.11.3</b> Exercise 3: Introduction to R Markdown</a></li>
+<li class="chapter" data-level="1.11.4" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#exercise-4-exploring-the-help-pane"><i class="fa fa-check"></i><b>1.11.4</b> Exercise 4: Exploring the Help Pane</a></li>
+<li class="chapter" data-level="1.11.5" data-path="introduction-to-r-and-r-studio.html"><a href="introduction-to-r-and-r-studio.html#conclusion"><i class="fa fa-check"></i><b>1.11.5</b> Conclusion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html"><i class="fa fa-check"></i><b>2</b> Types of Data Psychologists Collect</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#why-data-collection-is-crucial"><i class="fa fa-check"></i><b>2.1</b> Why Data Collection is Crucial</a></li>
+<li class="chapter" data-level="2.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#impact-of-data-type-on-research-outcomes"><i class="fa fa-check"></i><b>2.2</b> Impact of Data Type on Research Outcomes</a></li>
+<li class="chapter" data-level="2.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#real-world-implications"><i class="fa fa-check"></i><b>2.3</b> Real-World Implications</a></li>
+<li class="chapter" data-level="2.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#observational-data"><i class="fa fa-check"></i><b>2.4</b> Observational Data</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#definition-and-examples"><i class="fa fa-check"></i><b>2.4.1</b> Definition and Examples</a></li>
+<li class="chapter" data-level="2.4.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#advantages-of-observational-data"><i class="fa fa-check"></i><b>2.4.2</b> Advantages of Observational Data</a></li>
+<li class="chapter" data-level="2.4.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#disadvantages-of-observational-data"><i class="fa fa-check"></i><b>2.4.3</b> Disadvantages of Observational Data</a></li>
+<li class="chapter" data-level="2.4.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#ethical-considerations"><i class="fa fa-check"></i><b>2.4.4</b> Ethical Considerations</a></li>
+<li class="chapter" data-level="2.4.5" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#conclusion-1"><i class="fa fa-check"></i><b>2.4.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#self-report-data"><i class="fa fa-check"></i><b>2.5</b> Self-Report Data</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#definition-and-examples-1"><i class="fa fa-check"></i><b>2.5.1</b> Definition and Examples</a></li>
+<li class="chapter" data-level="2.5.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#advantages-of-self-report-data"><i class="fa fa-check"></i><b>2.5.2</b> Advantages of Self-Report Data</a></li>
+<li class="chapter" data-level="2.5.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#disadvantages-of-self-report-data"><i class="fa fa-check"></i><b>2.5.3</b> Disadvantages of Self-Report Data</a></li>
+<li class="chapter" data-level="2.5.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#methodological-considerations"><i class="fa fa-check"></i><b>2.5.4</b> Methodological Considerations</a></li>
+<li class="chapter" data-level="2.5.5" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#conclusion-2"><i class="fa fa-check"></i><b>2.5.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#experimental-manipulation"><i class="fa fa-check"></i><b>2.6</b> Experimental Manipulation</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#definition-and-examples-2"><i class="fa fa-check"></i><b>2.6.1</b> Definition and Examples</a></li>
+<li class="chapter" data-level="2.6.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#causality-and-the-gold-standard-of-experimental-research"><i class="fa fa-check"></i><b>2.6.2</b> Causality and the Gold Standard of Experimental Research</a></li>
+<li class="chapter" data-level="2.6.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#advantages-of-experimental-manipulation"><i class="fa fa-check"></i><b>2.6.3</b> Advantages of Experimental Manipulation</a></li>
+<li class="chapter" data-level="2.6.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#disadvantages-of-experimental-manipulation"><i class="fa fa-check"></i><b>2.6.4</b> Disadvantages of Experimental Manipulation</a></li>
+<li class="chapter" data-level="2.6.5" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#ethical-considerations-1"><i class="fa fa-check"></i><b>2.6.5</b> Ethical Considerations</a></li>
+<li class="chapter" data-level="2.6.6" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#conclusion-3"><i class="fa fa-check"></i><b>2.6.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#comparative-analysis"><i class="fa fa-check"></i><b>2.7</b> Comparative Analysis</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#overview-of-data-types"><i class="fa fa-check"></i><b>2.7.1</b> Overview of Data Types</a></li>
+<li class="chapter" data-level="2.7.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#comparative-strengths"><i class="fa fa-check"></i><b>2.7.2</b> Comparative Strengths</a></li>
+<li class="chapter" data-level="2.7.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#comparative-weaknesses"><i class="fa fa-check"></i><b>2.7.3</b> Comparative Weaknesses</a></li>
+<li class="chapter" data-level="2.7.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#guidelines-for-choosing-data-types"><i class="fa fa-check"></i><b>2.7.4</b> Guidelines for Choosing Data Types</a></li>
+<li class="chapter" data-level="2.7.5" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#conclusion-4"><i class="fa fa-check"></i><b>2.7.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#chapter-summary-1"><i class="fa fa-check"></i><b>2.8</b> Chapter Summary</a></li>
+<li class="chapter" data-level="2.9" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#practice-exercises"><i class="fa fa-check"></i><b>2.9</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#exercise-1-identifying-data-types"><i class="fa fa-check"></i><b>2.9.1</b> Exercise 1: Identifying Data Types</a></li>
+<li class="chapter" data-level="2.9.2" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#exercise-2-designing-a-study"><i class="fa fa-check"></i><b>2.9.2</b> Exercise 2: Designing a Study</a></li>
+<li class="chapter" data-level="2.9.3" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#exercise-3-evaluating-research"><i class="fa fa-check"></i><b>2.9.3</b> Exercise 3: Evaluating Research</a></li>
+<li class="chapter" data-level="2.9.4" data-path="types-of-data-psychologists-collect.html"><a href="types-of-data-psychologists-collect.html#further-reflection"><i class="fa fa-check"></i><b>2.9.4</b> Further Reflection</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html"><i class="fa fa-check"></i><b>3</b> Measurement Errors in Psychological Research</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#the-importance-of-measurement-accuracy"><i class="fa fa-check"></i><b>3.1</b> The Importance of Measurement Accuracy</a></li>
+<li class="chapter" data-level="3.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#reliability-and-validity-cornerstones-of-psychological-measurement"><i class="fa fa-check"></i><b>3.2</b> Reliability and Validity: Cornerstones of Psychological Measurement</a></li>
+<li class="chapter" data-level="3.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#interdependence-of-reliability-and-validity"><i class="fa fa-check"></i><b>3.3</b> Interdependence of Reliability and Validity</a></li>
+<li class="chapter" data-level="3.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#overview-of-the-chapter"><i class="fa fa-check"></i><b>3.4</b> Overview of the Chapter</a></li>
+<li class="chapter" data-level="3.5" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#understanding-reliability"><i class="fa fa-check"></i><b>3.5</b> Understanding Reliability</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#types-of-reliability"><i class="fa fa-check"></i><b>3.5.1</b> Types of Reliability</a></li>
+<li class="chapter" data-level="3.5.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#assessing-reliability-in-r"><i class="fa fa-check"></i><b>3.5.2</b> Assessing Reliability in R</a></li>
+<li class="chapter" data-level="3.5.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#conclusion-5"><i class="fa fa-check"></i><b>3.5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exploring-validity"><i class="fa fa-check"></i><b>3.6</b> Exploring Validity</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#definition-and-importance-of-validity"><i class="fa fa-check"></i><b>3.6.1</b> Definition and Importance of Validity</a></li>
+<li class="chapter" data-level="3.6.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#types-of-validity"><i class="fa fa-check"></i><b>3.6.2</b> Types of Validity</a></li>
+<li class="chapter" data-level="3.6.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#assessing-validity-in-r"><i class="fa fa-check"></i><b>3.6.3</b> Assessing Validity in R</a></li>
+<li class="chapter" data-level="3.6.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#challenges-to-validity"><i class="fa fa-check"></i><b>3.6.4</b> Challenges to Validity</a></li>
+<li class="chapter" data-level="3.6.5" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#conclusion-6"><i class="fa fa-check"></i><b>3.6.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#errors-in-data-collection"><i class="fa fa-check"></i><b>3.7</b> Errors in Data Collection</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#common-data-collection-errors"><i class="fa fa-check"></i><b>3.7.1</b> Common Data Collection Errors</a></li>
+<li class="chapter" data-level="3.7.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#impact-on-research-outcomes"><i class="fa fa-check"></i><b>3.7.2</b> Impact on Research Outcomes</a></li>
+<li class="chapter" data-level="3.7.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#mitigating-data-collection-errors"><i class="fa fa-check"></i><b>3.7.3</b> Mitigating Data Collection Errors</a></li>
+<li class="chapter" data-level="3.7.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#conclusion-7"><i class="fa fa-check"></i><b>3.7.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#illustrative-case-studies"><i class="fa fa-check"></i><b>3.8</b> Illustrative Case Studies</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#case-study-1-reliability-issues-in-longitudinal-studies"><i class="fa fa-check"></i><b>3.8.1</b> Case Study 1: Reliability Issues in Longitudinal Studies</a></li>
+<li class="chapter" data-level="3.8.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#case-study-2-validity-concerns-in-educational-psychology"><i class="fa fa-check"></i><b>3.8.2</b> Case Study 2: Validity Concerns in Educational Psychology</a></li>
+<li class="chapter" data-level="3.8.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#case-study-3-data-collection-errors-in-social-psychology"><i class="fa fa-check"></i><b>3.8.3</b> Case Study 3: Data Collection Errors in Social Psychology</a></li>
+<li class="chapter" data-level="3.8.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#conclusion-8"><i class="fa fa-check"></i><b>3.8.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#best-practices-for-ensuring-reliability-and-validity"><i class="fa fa-check"></i><b>3.9</b> Best Practices for Ensuring Reliability and Validity</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#establishing-reliability"><i class="fa fa-check"></i><b>3.9.1</b> Establishing Reliability</a></li>
+<li class="chapter" data-level="3.9.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#enhancing-validity"><i class="fa fa-check"></i><b>3.9.2</b> Enhancing Validity</a></li>
+<li class="chapter" data-level="3.9.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#addressing-common-data-collection-errors"><i class="fa fa-check"></i><b>3.9.3</b> Addressing Common Data Collection Errors</a></li>
+<li class="chapter" data-level="3.9.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#continuous-improvement"><i class="fa fa-check"></i><b>3.9.4</b> Continuous Improvement</a></li>
+<li class="chapter" data-level="3.9.5" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#conclusion-9"><i class="fa fa-check"></i><b>3.9.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#chapter-summary-2"><i class="fa fa-check"></i><b>3.10</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#key-points-recap"><i class="fa fa-check"></i><b>3.10.1</b> Key Points Recap</a></li>
+<li class="chapter" data-level="3.10.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#importance-of-measurement-accuracy"><i class="fa fa-check"></i><b>3.10.2</b> Importance of Measurement Accuracy</a></li>
+<li class="chapter" data-level="3.10.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#continuous-improvement-1"><i class="fa fa-check"></i><b>3.10.3</b> Continuous Improvement</a></li>
+<li class="chapter" data-level="3.10.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#looking-ahead"><i class="fa fa-check"></i><b>3.10.4</b> Looking Ahead</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#practice-exercises-1"><i class="fa fa-check"></i><b>3.11</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="3.11.1" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-1-evaluating-reliability"><i class="fa fa-check"></i><b>3.11.1</b> Exercise 1: Evaluating Reliability</a></li>
+<li class="chapter" data-level="3.11.2" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-2-assessing-validity"><i class="fa fa-check"></i><b>3.11.2</b> Exercise 2: Assessing Validity</a></li>
+<li class="chapter" data-level="3.11.3" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-3-identifying-and-addressing-data-collection-errors"><i class="fa fa-check"></i><b>3.11.3</b> Exercise 3: Identifying and Addressing Data Collection Errors</a></li>
+<li class="chapter" data-level="3.11.4" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-4-triangulation-to-enhance-validity"><i class="fa fa-check"></i><b>3.11.4</b> Exercise 4: Triangulation to Enhance Validity</a></li>
+<li class="chapter" data-level="3.11.5" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-5-role-play-on-ethical-data-collection"><i class="fa fa-check"></i><b>3.11.5</b> Exercise 5: Role Play on Ethical Data Collection</a></li>
+<li class="chapter" data-level="3.11.6" data-path="measurement-errors-in-psychological-research.html"><a href="measurement-errors-in-psychological-research.html#exercise-6-real-world-application"><i class="fa fa-check"></i><b>3.11.6</b> Exercise 6: Real-World Application</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html"><i class="fa fa-check"></i><b>4</b> Descriptive Statistics and Basic Probability in Psychological Research</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#overview-of-the-importance-of-descriptive-statistics-and-probability-in-psychological-research"><i class="fa fa-check"></i><b>4.1</b> Overview of the Importance of Descriptive Statistics and Probability in Psychological Research</a></li>
+<li class="chapter" data-level="4.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#the-role-of-descriptive-statistics"><i class="fa fa-check"></i><b>4.2</b> The Role of Descriptive Statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#the-importance-of-probability"><i class="fa fa-check"></i><b>4.3</b> The Importance of Probability</a></li>
+<li class="chapter" data-level="4.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#descriptive-statistics-and-probability-in-r"><i class="fa fa-check"></i><b>4.4</b> Descriptive Statistics and Probability in R</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#descriptive-statistics-to-summarize-data"><i class="fa fa-check"></i><b>4.4.1</b> Descriptive Statistics to Summarize Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#measures-of-centrality"><i class="fa fa-check"></i><b>4.5</b> Measures of Centrality</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#mean"><i class="fa fa-check"></i><b>4.5.1</b> Mean</a></li>
+<li class="chapter" data-level="4.5.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#median"><i class="fa fa-check"></i><b>4.5.2</b> Median</a></li>
+<li class="chapter" data-level="4.5.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#mode"><i class="fa fa-check"></i><b>4.5.3</b> Mode</a></li>
+<li class="chapter" data-level="4.5.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#conclusion-10"><i class="fa fa-check"></i><b>4.5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#measures-of-complexity"><i class="fa fa-check"></i><b>4.6</b> Measures of Complexity</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#range"><i class="fa fa-check"></i><b>4.6.1</b> Range</a></li>
+<li class="chapter" data-level="4.6.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#variance"><i class="fa fa-check"></i><b>4.6.2</b> Variance</a></li>
+<li class="chapter" data-level="4.6.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#standard-deviation"><i class="fa fa-check"></i><b>4.6.3</b> Standard Deviation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#outliers"><i class="fa fa-check"></i><b>4.6.4</b> Outliers</a></li>
+<li class="chapter" data-level="4.6.5" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#conclusion-11"><i class="fa fa-check"></i><b>4.6.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#calculating-probabilities"><i class="fa fa-check"></i><b>4.7</b> Calculating Probabilities</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#overview-of-probability-in-the-context-of-psychological-research"><i class="fa fa-check"></i><b>4.7.1</b> Overview of Probability in the Context of Psychological Research</a></li>
+<li class="chapter" data-level="4.7.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#normal-distribution"><i class="fa fa-check"></i><b>4.7.2</b> Normal Distribution</a></li>
+<li class="chapter" data-level="4.7.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#t-distribution"><i class="fa fa-check"></i><b>4.7.3</b> T-Distribution</a></li>
+<li class="chapter" data-level="4.7.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#conclusion-12"><i class="fa fa-check"></i><b>4.7.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#identifying-a-sample-space"><i class="fa fa-check"></i><b>4.8</b> Identifying a Sample Space</a>
+<ul>
+<li class="chapter" data-level="4.8.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#definition-and-importance-of-identifying-a-sample-space"><i class="fa fa-check"></i><b>4.8.1</b> Definition and Importance of Identifying a Sample Space</a></li>
+<li class="chapter" data-level="4.8.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#examples-of-defining-sample-spaces-for-different-types-of-psychological-data"><i class="fa fa-check"></i><b>4.8.2</b> Examples of Defining Sample Spaces for Different Types of Psychological Data</a></li>
+<li class="chapter" data-level="4.8.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#practical-example-in-r"><i class="fa fa-check"></i><b>4.8.3</b> Practical Example in R</a></li>
+<li class="chapter" data-level="4.8.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#conclusion-13"><i class="fa fa-check"></i><b>4.8.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#chapter-summary-3"><i class="fa fa-check"></i><b>4.9</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#key-points-recap-1"><i class="fa fa-check"></i><b>4.9.1</b> Key Points Recap</a></li>
+<li class="chapter" data-level="4.9.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#practical-applications"><i class="fa fa-check"></i><b>4.9.2</b> Practical Applications</a></li>
+<li class="chapter" data-level="4.9.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#conclusion-14"><i class="fa fa-check"></i><b>4.9.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#practice-exercises-2"><i class="fa fa-check"></i><b>4.10</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="4.10.1" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#exercise-1-calculating-descriptive-statistics"><i class="fa fa-check"></i><b>4.10.1</b> Exercise 1: Calculating Descriptive Statistics</a></li>
+<li class="chapter" data-level="4.10.2" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#exercise-2-understanding-the-normal-distribution"><i class="fa fa-check"></i><b>4.10.2</b> Exercise 2: Understanding the Normal Distribution</a></li>
+<li class="chapter" data-level="4.10.3" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#exercise-3-applying-the-t-distribution"><i class="fa fa-check"></i><b>4.10.3</b> Exercise 3: Applying the T-Distribution</a></li>
+<li class="chapter" data-level="4.10.4" data-path="descriptive-statistics-and-basic-probability-in-psychological-research.html"><a href="descriptive-statistics-and-basic-probability-in-psychological-research.html#exercise-4-defining-and-simulating-sample-spaces"><i class="fa fa-check"></i><b>4.10.4</b> Exercise 4: Defining and Simulating Sample Spaces</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="computation.html"><a href="computation.html"><i class="fa fa-check"></i><b>5</b> Computation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="computation.html"><a href="computation.html#overview-of-the-importance-of-data-computation-and-manipulation-in-psychological-research"><i class="fa fa-check"></i><b>5.1</b> Overview of the Importance of Data Computation and Manipulation in Psychological Research</a></li>
+<li class="chapter" data-level="5.2" data-path="computation.html"><a href="computation.html#importance-of-data-computation-and-manipulation"><i class="fa fa-check"></i><b>5.2</b> Importance of Data Computation and Manipulation</a></li>
+<li class="chapter" data-level="5.3" data-path="computation.html"><a href="computation.html#brief-introduction-to-rs-capabilities-for-data-handling"><i class="fa fa-check"></i><b>5.3</b> Brief Introduction to R’s Capabilities for Data Handling</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="computation.html"><a href="computation.html#key-capabilities-of-r-for-data-handling"><i class="fa fa-check"></i><b>5.3.1</b> Key Capabilities of R for Data Handling</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="computation.html"><a href="computation.html#importing-data-from-excel-files"><i class="fa fa-check"></i><b>5.4</b> Importing Data from Excel Files</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="computation.html"><a href="computation.html#importing-.csv-files"><i class="fa fa-check"></i><b>5.4.1</b> Importing .csv Files</a></li>
+<li class="chapter" data-level="5.4.2" data-path="computation.html"><a href="computation.html#importing-.xlsx-files"><i class="fa fa-check"></i><b>5.4.2</b> Importing .xlsx Files</a></li>
+<li class="chapter" data-level="5.4.3" data-path="computation.html"><a href="computation.html#conclusion-15"><i class="fa fa-check"></i><b>5.4.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="computation.html"><a href="computation.html#cleaning-data"><i class="fa fa-check"></i><b>5.5</b> Cleaning Data</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="computation.html"><a href="computation.html#introduction-to-dplyr"><i class="fa fa-check"></i><b>5.5.1</b> Introduction to <code>dplyr</code></a></li>
+<li class="chapter" data-level="5.5.2" data-path="computation.html"><a href="computation.html#key-dplyr-functions-for-data-cleaning"><i class="fa fa-check"></i><b>5.5.2</b> Key <code>dplyr</code> Functions for Data Cleaning</a></li>
+<li class="chapter" data-level="5.5.3" data-path="computation.html"><a href="computation.html#practical-examples-of-data-cleaning"><i class="fa fa-check"></i><b>5.5.3</b> Practical Examples of Data Cleaning</a></li>
+<li class="chapter" data-level="5.5.4" data-path="computation.html"><a href="computation.html#conclusion-16"><i class="fa fa-check"></i><b>5.5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="computation.html"><a href="computation.html#describing-data-using-the-psych-package"><i class="fa fa-check"></i><b>5.6</b> Describing Data Using the <code>psych</code> Package</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="computation.html"><a href="computation.html#overview-of-the-psych-package"><i class="fa fa-check"></i><b>5.6.1</b> Overview of the <code>psych</code> Package</a></li>
+<li class="chapter" data-level="5.6.2" data-path="computation.html"><a href="computation.html#descriptive-statistics-with-psych"><i class="fa fa-check"></i><b>5.6.2</b> Descriptive Statistics with <code>psych</code></a></li>
+<li class="chapter" data-level="5.6.3" data-path="computation.html"><a href="computation.html#graphical-representations-with-psych"><i class="fa fa-check"></i><b>5.6.3</b> Graphical Representations with <code>psych</code></a></li>
+<li class="chapter" data-level="5.6.4" data-path="computation.html"><a href="computation.html#conclusion-17"><i class="fa fa-check"></i><b>5.6.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="computation.html"><a href="computation.html#chapter-summary-4"><i class="fa fa-check"></i><b>5.7</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="computation.html"><a href="computation.html#key-points-recap-2"><i class="fa fa-check"></i><b>5.7.1</b> Key Points Recap</a></li>
+<li class="chapter" data-level="5.7.2" data-path="computation.html"><a href="computation.html#practical-applications-1"><i class="fa fa-check"></i><b>5.7.2</b> Practical Applications</a></li>
+<li class="chapter" data-level="5.7.3" data-path="computation.html"><a href="computation.html#conclusion-18"><i class="fa fa-check"></i><b>5.7.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="computation.html"><a href="computation.html#practice-exercises-3"><i class="fa fa-check"></i><b>5.8</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="5.8.1" data-path="computation.html"><a href="computation.html#exercise-1-importing-data"><i class="fa fa-check"></i><b>5.8.1</b> Exercise 1: Importing Data</a></li>
+<li class="chapter" data-level="5.8.2" data-path="computation.html"><a href="computation.html#exercise-2-cleaning-data-with-dplyr"><i class="fa fa-check"></i><b>5.8.2</b> Exercise 2: Cleaning Data with <code>dplyr</code></a></li>
+<li class="chapter" data-level="5.8.3" data-path="computation.html"><a href="computation.html#exercise-3-generating-descriptive-statistics-with-psych"><i class="fa fa-check"></i><b>5.8.3</b> Exercise 3: Generating Descriptive Statistics with <code>psych</code></a></li>
+<li class="chapter" data-level="5.8.4" data-path="computation.html"><a href="computation.html#exercise-4-visualizing-data-with-psych"><i class="fa fa-check"></i><b>5.8.4</b> Exercise 4: Visualizing Data with <code>psych</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html"><i class="fa fa-check"></i><b>6</b> Linear and Non-Linear Transformations of Data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#chapter-overview"><i class="fa fa-check"></i><b>6.1</b> Chapter Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#mean-centering"><i class="fa fa-check"></i><b>6.2</b> Mean-Centering</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#definition-and-importance-1"><i class="fa fa-check"></i><b>6.2.1</b> Definition and Importance</a></li>
+<li class="chapter" data-level="6.2.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#mathematical-formula"><i class="fa fa-check"></i><b>6.2.2</b> Mathematical Formula</a></li>
+<li class="chapter" data-level="6.2.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#practical-examples"><i class="fa fa-check"></i><b>6.2.3</b> Practical Examples</a></li>
+<li class="chapter" data-level="6.2.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#real-world-applications"><i class="fa fa-check"></i><b>6.2.4</b> Real-World Applications</a></li>
+<li class="chapter" data-level="6.2.5" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#r-code-implementation"><i class="fa fa-check"></i><b>6.2.5</b> R Code Implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#z-scores"><i class="fa fa-check"></i><b>6.3</b> Z-Scores</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#definition-and-importance-2"><i class="fa fa-check"></i><b>6.3.1</b> Definition and Importance</a></li>
+<li class="chapter" data-level="6.3.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#mathematical-formula-1"><i class="fa fa-check"></i><b>6.3.2</b> Mathematical Formula</a></li>
+<li class="chapter" data-level="6.3.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#practical-examples-1"><i class="fa fa-check"></i><b>6.3.3</b> Practical Examples</a></li>
+<li class="chapter" data-level="6.3.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#real-world-applications-1"><i class="fa fa-check"></i><b>6.3.4</b> Real-World Applications</a></li>
+<li class="chapter" data-level="6.3.5" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#r-code-implementation-1"><i class="fa fa-check"></i><b>6.3.5</b> R Code Implementation</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#combining-transformations"><i class="fa fa-check"></i><b>6.4</b> Combining Transformations</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#mean-centering-and-z-scores-together"><i class="fa fa-check"></i><b>6.4.1</b> Mean-Centering and Z-Scores Together</a></li>
+<li class="chapter" data-level="6.4.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#practical-example-1"><i class="fa fa-check"></i><b>6.4.2</b> Practical Example</a></li>
+<li class="chapter" data-level="6.4.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#r-code-implementation-2"><i class="fa fa-check"></i><b>6.4.3</b> R Code Implementation</a></li>
+<li class="chapter" data-level="6.4.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#summary"><i class="fa fa-check"></i><b>6.4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#non-linear-transformations"><i class="fa fa-check"></i><b>6.5</b> Non-Linear Transformations</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#introduction-to-non-linear-transformations"><i class="fa fa-check"></i><b>6.5.1</b> Introduction to Non-Linear Transformations</a></li>
+<li class="chapter" data-level="6.5.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#types-of-non-linear-transformations"><i class="fa fa-check"></i><b>6.5.2</b> Types of Non-Linear Transformations</a></li>
+<li class="chapter" data-level="6.5.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#practical-examples-2"><i class="fa fa-check"></i><b>6.5.3</b> Practical Examples</a></li>
+<li class="chapter" data-level="6.5.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#real-world-applications-2"><i class="fa fa-check"></i><b>6.5.4</b> Real-World Applications</a></li>
+<li class="chapter" data-level="6.5.5" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#r-code-implementation-3"><i class="fa fa-check"></i><b>6.5.5</b> R Code Implementation</a></li>
+<li class="chapter" data-level="6.5.6" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#summary-1"><i class="fa fa-check"></i><b>6.5.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#chapter-summary-5"><i class="fa fa-check"></i><b>6.6</b> Chapter Summary</a></li>
+<li class="chapter" data-level="6.7" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#practice-exercises-4"><i class="fa fa-check"></i><b>6.7</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#exercise-1-mean-centering"><i class="fa fa-check"></i><b>6.7.1</b> Exercise 1: Mean-Centering</a></li>
+<li class="chapter" data-level="6.7.2" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#exercise-2-z-scores"><i class="fa fa-check"></i><b>6.7.2</b> Exercise 2: Z-Scores</a></li>
+<li class="chapter" data-level="6.7.3" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#exercise-3-combining-mean-centering-and-z-scores"><i class="fa fa-check"></i><b>6.7.3</b> Exercise 3: Combining Mean-Centering and Z-Scores</a></li>
+<li class="chapter" data-level="6.7.4" data-path="linear-and-non-linear-transformations-of-data.html"><a href="linear-and-non-linear-transformations-of-data.html#exercise-4-non-linear-transformations"><i class="fa fa-check"></i><b>6.7.4</b> Exercise 4: Non-Linear Transformations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html"><i class="fa fa-check"></i><b>7</b> ggplot2 and Graphing Data in APA Formatting</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#chapter-overview-introduction-to-data-visualization"><i class="fa fa-check"></i><b>7.1</b> Chapter Overview: Introduction to Data Visualization</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#importance-of-graphing-in-research"><i class="fa fa-check"></i><b>7.1.1</b> Importance of Graphing in Research</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#common-types-of-graphs-in-psychological-research"><i class="fa fa-check"></i><b>7.1.2</b> Common Types of Graphs in Psychological Research</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#getting-started-with-ggplot2"><i class="fa fa-check"></i><b>7.2</b> Getting Started with ggplot2</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#what-is-ggplot2"><i class="fa fa-check"></i><b>7.2.1</b> What is ggplot2?</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#understanding-the-grammar-of-graphics"><i class="fa fa-check"></i><b>7.2.2</b> Understanding the Grammar of Graphics</a></li>
+<li class="chapter" data-level="7.2.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#basic-components-of-a-ggplot2-plot"><i class="fa fa-check"></i><b>7.2.3</b> Basic Components of a ggplot2 Plot</a></li>
+<li class="chapter" data-level="7.2.4" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#creating-your-first-plot"><i class="fa fa-check"></i><b>7.2.4</b> Creating Your First Plot</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#customizing-plots-with-ggplot2"><i class="fa fa-check"></i><b>7.3</b> Customizing Plots with ggplot2</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#adding-titles-and-labels"><i class="fa fa-check"></i><b>7.3.1</b> Adding Titles and Labels</a></li>
+<li class="chapter" data-level="7.3.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#modifying-themes"><i class="fa fa-check"></i><b>7.3.2</b> Modifying Themes</a></li>
+<li class="chapter" data-level="7.3.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#adjusting-colors-and-styles"><i class="fa fa-check"></i><b>7.3.3</b> Adjusting Colors and Styles</a></li>
+<li class="chapter" data-level="7.3.4" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#adding-annotations"><i class="fa fa-check"></i><b>7.3.4</b> Adding Annotations</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#saving-and-exporting-plots"><i class="fa fa-check"></i><b>7.4</b> Saving and Exporting Plots</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#saving-and-exporting-plots-1"><i class="fa fa-check"></i><b>7.4.1</b> Saving and Exporting Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#introduction-to-apa-formatting"><i class="fa fa-check"></i><b>7.5</b> Introduction to APA Formatting</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#what-is-apa-formatting"><i class="fa fa-check"></i><b>7.5.1</b> What is APA Formatting?</a></li>
+<li class="chapter" data-level="7.5.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#key-elements-of-apa-formatted-graphs"><i class="fa fa-check"></i><b>7.5.2</b> Key Elements of APA-Formatted Graphs</a></li>
+<li class="chapter" data-level="7.5.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#example-comparing-a-standard-ggplot2-graph-with-an-apa-compliant-graph"><i class="fa fa-check"></i><b>7.5.3</b> Example: Comparing a Standard ggplot2 Graph with an APA-Compliant Graph</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#creating-apa-formatted-graphs-with-ggplot2"><i class="fa fa-check"></i><b>7.6</b> Creating APA-Formatted Graphs with ggplot2</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#modifying-ggplot2-plots-to-meet-apa-standards"><i class="fa fa-check"></i><b>7.6.1</b> Modifying ggplot2 Plots to Meet APA Standards</a></li>
+<li class="chapter" data-level="7.6.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#using-theme-options-for-apa-compliance"><i class="fa fa-check"></i><b>7.6.2</b> Using Theme Options for APA Compliance</a></li>
+<li class="chapter" data-level="7.6.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#common-apa-formatted-graphs"><i class="fa fa-check"></i><b>7.6.3</b> Common APA-Formatted Graphs</a></li>
+<li class="chapter" data-level="7.6.4" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#adding-annotations-and-apa-legends"><i class="fa fa-check"></i><b>7.6.4</b> Adding Annotations and APA Legends</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#practical-examples-and-exercises"><i class="fa fa-check"></i><b>7.7</b> Practical Examples and Exercises</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#example-1-creating-an-apa-formatted-bar-graph"><i class="fa fa-check"></i><b>7.7.1</b> Example 1: Creating an APA-Formatted Bar Graph</a></li>
+<li class="chapter" data-level="7.7.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#example-2-creating-an-apa-formatted-line-graph"><i class="fa fa-check"></i><b>7.7.2</b> Example 2: Creating an APA-Formatted Line Graph</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#tips-and-best-practices"><i class="fa fa-check"></i><b>7.8</b> Tips and Best Practices</a>
+<ul>
+<li class="chapter" data-level="7.8.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#common-mistakes-to-avoid-in-apa-graphing"><i class="fa fa-check"></i><b>7.8.1</b> Common Mistakes to Avoid in APA Graphing</a></li>
+<li class="chapter" data-level="7.8.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#best-practices-for-clear-and-effective-graphs"><i class="fa fa-check"></i><b>7.8.2</b> Best Practices for Clear and Effective Graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.9" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#chapter-summary-6"><i class="fa fa-check"></i><b>7.9</b> Chapter Summary</a></li>
+<li class="chapter" data-level="7.10" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#practice-exercises-5"><i class="fa fa-check"></i><b>7.10</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="7.10.1" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#exercise-1-create-an-apa-compliant-bar-graph"><i class="fa fa-check"></i><b>7.10.1</b> Exercise 1: Create an APA-Compliant Bar Graph</a></li>
+<li class="chapter" data-level="7.10.2" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#exercise-2-modify-a-basic-ggplot2-plot-to-meet-apa-standards"><i class="fa fa-check"></i><b>7.10.2</b> Exercise 2: Modify a Basic ggplot2 Plot to Meet APA Standards</a></li>
+<li class="chapter" data-level="7.10.3" data-path="ggplot2-and-graphing-data-in-apa-formatting.html"><a href="ggplot2-and-graphing-data-in-apa-formatting.html#exercise-3-create-an-apa-compliant-line-graph-and-save-it-as-a-high-resolution-image"><i class="fa fa-check"></i><b>7.10.3</b> Exercise 3: Create an APA-Compliant Line Graph and Save It as a High-Resolution Image</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html"><i class="fa fa-check"></i><b>8</b> Hypothesis Testing for Samples from Two Populations</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#introduction-to-hypothesis-testing"><i class="fa fa-check"></i><b>8.1</b> Introduction to Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#overview-of-hypothesis-testing"><i class="fa fa-check"></i><b>8.1.1</b> Overview of Hypothesis Testing</a></li>
+<li class="chapter" data-level="8.1.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#null-and-alternative-hypotheses"><i class="fa fa-check"></i><b>8.1.2</b> Null and Alternative Hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#understanding-estimates-in-hypothesis-testing"><i class="fa fa-check"></i><b>8.2</b> Understanding Estimates in Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#point-estimates"><i class="fa fa-check"></i><b>8.2.1</b> Point Estimates</a></li>
+<li class="chapter" data-level="8.2.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#standard-error"><i class="fa fa-check"></i><b>8.2.2</b> Standard Error</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#confidence-intervals-in-hypothesis-testing"><i class="fa fa-check"></i><b>8.3</b> Confidence Intervals in Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#introduction-to-confidence-intervals"><i class="fa fa-check"></i><b>8.3.1</b> Introduction to Confidence Intervals</a></li>
+<li class="chapter" data-level="8.3.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#calculating-confidence-intervals"><i class="fa fa-check"></i><b>8.3.2</b> Calculating Confidence Intervals</a></li>
+<li class="chapter" data-level="8.3.3" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#interpreting-confidence-intervals"><i class="fa fa-check"></i><b>8.3.3</b> Interpreting Confidence Intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#t-tests-for-comparing-two-populations"><i class="fa fa-check"></i><b>8.4</b> t-Tests for Comparing Two Populations</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#introduction-to-t-tests"><i class="fa fa-check"></i><b>8.4.1</b> Introduction to t-Tests</a></li>
+<li class="chapter" data-level="8.4.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#independent-samples-t-test"><i class="fa fa-check"></i><b>8.4.2</b> Independent Samples t-Test</a></li>
+<li class="chapter" data-level="8.4.3" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#paired-samples-t-test"><i class="fa fa-check"></i><b>8.4.3</b> Paired Samples t-Test</a></li>
+<li class="chapter" data-level="8.4.4" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#interpreting-t-test-results"><i class="fa fa-check"></i><b>8.4.4</b> Interpreting t-Test Results</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#understanding-significance-in-hypothesis-testing"><i class="fa fa-check"></i><b>8.5</b> Understanding Significance in Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#the-concept-of-statistical-significance"><i class="fa fa-check"></i><b>8.5.1</b> The Concept of Statistical Significance</a></li>
+<li class="chapter" data-level="8.5.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#p-values-and-their-interpretation"><i class="fa fa-check"></i><b>8.5.2</b> p-Values and Their Interpretation</a></li>
+<li class="chapter" data-level="8.5.3" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#the-role-of-effect-size-in-significance"><i class="fa fa-check"></i><b>8.5.3</b> The Role of Effect Size in Significance</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#chapter-summary-7"><i class="fa fa-check"></i><b>8.6</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#recap-of-key-concepts"><i class="fa fa-check"></i><b>8.6.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="8.6.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#final-thoughts"><i class="fa fa-check"></i><b>8.6.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#practice-exercises-6"><i class="fa fa-check"></i><b>8.7</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#exercise-1-calculate-and-interpret-the-standard-error-for-a-sample-dataset-comparing-two-groups"><i class="fa fa-check"></i><b>8.7.1</b> Exercise 1: Calculate and Interpret the Standard Error for a Sample Dataset Comparing Two Groups</a></li>
+<li class="chapter" data-level="8.7.2" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#exercise-2-calculate-confidence-intervals-for-the-difference-between-two-sample-means-and-interpret-the-results"><i class="fa fa-check"></i><b>8.7.2</b> Exercise 2: Calculate Confidence Intervals for the Difference Between Two Sample Means and Interpret the Results</a></li>
+<li class="chapter" data-level="8.7.3" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#exercise-3-conduct-an-independent-samples-t-test-in-r-and-interpret-the-output"><i class="fa fa-check"></i><b>8.7.3</b> Exercise 3: Conduct an Independent Samples t-Test in R and Interpret the Output</a></li>
+<li class="chapter" data-level="8.7.4" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#exercise-4-conduct-a-paired-samples-t-test-in-r-and-interpret-the-output"><i class="fa fa-check"></i><b>8.7.4</b> Exercise 4: Conduct a Paired Samples t-Test in R and Interpret the Output</a></li>
+<li class="chapter" data-level="8.7.5" data-path="hypothesis-testing-for-samples-from-two-populations.html"><a href="hypothesis-testing-for-samples-from-two-populations.html#exercise-5-analyze-the-significance-and-effect-size-of-a-t-test-result-and-discuss-the-implications-for-the-studys-findings"><i class="fa fa-check"></i><b>8.7.5</b> Exercise 5: Analyze the Significance and Effect Size of a t-Test Result and Discuss the Implications for the Study’s Findings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="correlations.html"><a href="correlations.html"><i class="fa fa-check"></i><b>9</b> Correlations</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="correlations.html"><a href="correlations.html#introduction-to-correlations"><i class="fa fa-check"></i><b>9.1</b> Introduction to Correlations</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="correlations.html"><a href="correlations.html#what-is-a-correlation"><i class="fa fa-check"></i><b>9.1.1</b> What is a Correlation?</a></li>
+<li class="chapter" data-level="9.1.2" data-path="correlations.html"><a href="correlations.html#types-of-correlation"><i class="fa fa-check"></i><b>9.1.2</b> Types of Correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="correlations.html"><a href="correlations.html#calculating-correlation-in-r"><i class="fa fa-check"></i><b>9.2</b> Calculating Correlation in R</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="correlations.html"><a href="correlations.html#pearsons-correlation-coefficient"><i class="fa fa-check"></i><b>9.2.1</b> Pearson’s Correlation Coefficient</a></li>
+<li class="chapter" data-level="9.2.2" data-path="correlations.html"><a href="correlations.html#step-by-step-guide-to-calculating-correlation-in-r"><i class="fa fa-check"></i><b>9.2.2</b> Step-by-Step Guide to Calculating Correlation in R</a></li>
+<li class="chapter" data-level="9.2.3" data-path="correlations.html"><a href="correlations.html#visualizing-correlation-with-ggplot2"><i class="fa fa-check"></i><b>9.2.3</b> Visualizing Correlation with ggplot2</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="correlations.html"><a href="correlations.html#understanding-the-size-of-effect"><i class="fa fa-check"></i><b>9.3</b> Understanding the Size of Effect</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="correlations.html"><a href="correlations.html#interpreting-the-size-of-correlation"><i class="fa fa-check"></i><b>9.3.1</b> Interpreting the Size of Correlation</a></li>
+<li class="chapter" data-level="9.3.2" data-path="correlations.html"><a href="correlations.html#examples-of-effect-size-in-correlation"><i class="fa fa-check"></i><b>9.3.2</b> Examples of Effect Size in Correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="correlations.html"><a href="correlations.html#the-directionality-and-symmetry-of-correlation"><i class="fa fa-check"></i><b>9.4</b> The Directionality and Symmetry of Correlation</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="correlations.html"><a href="correlations.html#no-directionality-in-correlation"><i class="fa fa-check"></i><b>9.4.1</b> No Directionality in Correlation</a></li>
+<li class="chapter" data-level="9.4.2" data-path="correlations.html"><a href="correlations.html#symmetry-of-correlation"><i class="fa fa-check"></i><b>9.4.2</b> Symmetry of Correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="correlations.html"><a href="correlations.html#issues-with-correlations"><i class="fa fa-check"></i><b>9.5</b> Issues with Correlations</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="correlations.html"><a href="correlations.html#the-third-variable-problem-confounders"><i class="fa fa-check"></i><b>9.5.1</b> The Third Variable Problem (Confounders)</a></li>
+<li class="chapter" data-level="9.5.2" data-path="correlations.html"><a href="correlations.html#directionality-problem"><i class="fa fa-check"></i><b>9.5.2</b> Directionality Problem</a></li>
+<li class="chapter" data-level="9.5.3" data-path="correlations.html"><a href="correlations.html#correlation-does-not-imply-causality"><i class="fa fa-check"></i><b>9.5.3</b> Correlation Does Not Imply Causality</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="correlations.html"><a href="correlations.html#chapter-summary-8"><i class="fa fa-check"></i><b>9.6</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="correlations.html"><a href="correlations.html#recap-of-key-concepts-1"><i class="fa fa-check"></i><b>9.6.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="9.6.2" data-path="correlations.html"><a href="correlations.html#final-thoughts-1"><i class="fa fa-check"></i><b>9.6.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="correlations.html"><a href="correlations.html#practice-exercises-7"><i class="fa fa-check"></i><b>9.7</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="correlations.html"><a href="correlations.html#exercise-1-calculate-and-interpret-the-pearson-correlation-coefficient-for-a-sample-dataset-in-r"><i class="fa fa-check"></i><b>9.7.1</b> Exercise 1: Calculate and Interpret the Pearson Correlation Coefficient for a Sample Dataset in R</a></li>
+<li class="chapter" data-level="9.7.2" data-path="correlations.html"><a href="correlations.html#exercise-2-create-a-scatter-plot-with-ggplot2-to-visualize-the-correlation-between-two-variables-and-add-a-trend-line"><i class="fa fa-check"></i><b>9.7.2</b> Exercise 2: Create a Scatter Plot with ggplot2 to Visualize the Correlation Between Two Variables and Add a Trend Line</a></li>
+<li class="chapter" data-level="9.7.3" data-path="correlations.html"><a href="correlations.html#exercise-3-analyze-the-size-of-the-correlation-and-discuss-its-practical-significance-in-a-psychological-context"><i class="fa fa-check"></i><b>9.7.3</b> Exercise 3: Analyze the Size of the Correlation and Discuss Its Practical Significance in a Psychological Context</a></li>
+<li class="chapter" data-level="9.7.4" data-path="correlations.html"><a href="correlations.html#exercise-4-discuss-the-potential-impact-of-a-third-variable-on-a-given-correlation-scenario-and-suggest-ways-to-control-for-it"><i class="fa fa-check"></i><b>9.7.4</b> Exercise 4: Discuss the Potential Impact of a Third Variable on a Given Correlation Scenario and Suggest Ways to Control for It</a></li>
+<li class="chapter" data-level="9.7.5" data-path="correlations.html"><a href="correlations.html#exercise-5-evaluate-a-correlation-study-and-discuss-why-correlation-does-not-imply-causality-using-specific-examples-from-the-chapter"><i class="fa fa-check"></i><b>9.7.5</b> Exercise 5: Evaluate a Correlation Study and Discuss Why Correlation Does Not Imply Causality, Using Specific Examples from the Chapter</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html"><i class="fa fa-check"></i><b>10</b> Bivariate Linear Models</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#what-are-bivariate-linear-models"><i class="fa fa-check"></i><b>10.1</b> What Are Bivariate Linear Models?</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#why-use-bivariate-linear-models"><i class="fa fa-check"></i><b>10.1.1</b> Why Use Bivariate Linear Models?</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#creating-linear-models-to-test-hypotheses"><i class="fa fa-check"></i><b>10.2</b> Creating Linear Models to Test Hypotheses</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#the-concept-of-a-linear-model"><i class="fa fa-check"></i><b>10.2.1</b> The Concept of a Linear Model</a></li>
+<li class="chapter" data-level="10.2.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#hypothesis-testing-with-linear-models"><i class="fa fa-check"></i><b>10.2.2</b> Hypothesis Testing with Linear Models</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#components-of-a-bivariate-linear-model"><i class="fa fa-check"></i><b>10.3</b> Components of a Bivariate Linear Model</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#intercept-b0"><i class="fa fa-check"></i><b>10.3.1</b> Intercept (b0)</a></li>
+<li class="chapter" data-level="10.3.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#slopes-b1"><i class="fa fa-check"></i><b>10.3.2</b> Slope(s) (b1)</a></li>
+<li class="chapter" data-level="10.3.3" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#correlations-1"><i class="fa fa-check"></i><b>10.3.3</b> Correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#residuals"><i class="fa fa-check"></i><b>10.4</b> Residuals</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#what-are-residuals"><i class="fa fa-check"></i><b>10.4.1</b> What Are Residuals?</a></li>
+<li class="chapter" data-level="10.4.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#importance-of-residuals-in-model-evaluation"><i class="fa fa-check"></i><b>10.4.2</b> Importance of Residuals in Model Evaluation</a></li>
+<li class="chapter" data-level="10.4.3" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#checking-for-patterns-in-residuals"><i class="fa fa-check"></i><b>10.4.3</b> Checking for Patterns in Residuals</a></li>
+<li class="chapter" data-level="10.4.4" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#example-residuals-with-a-pattern-non-normal-distribution"><i class="fa fa-check"></i><b>10.4.4</b> Example: Residuals with a Pattern (Non-Normal Distribution)</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#real-world-application-of-bivariate-linear-models"><i class="fa fa-check"></i><b>10.5</b> Real-World Application of Bivariate Linear Models</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#practical-examples-in-psychological-research"><i class="fa fa-check"></i><b>10.5.1</b> Practical Examples in Psychological Research</a></li>
+<li class="chapter" data-level="10.5.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#building-your-own-bivariate-linear-model-in-r"><i class="fa fa-check"></i><b>10.5.2</b> Building Your Own Bivariate Linear Model in R</a></li>
+<li class="chapter" data-level="10.5.3" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#limitations-and-considerations"><i class="fa fa-check"></i><b>10.5.3</b> Limitations and Considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#chapter-summary-9"><i class="fa fa-check"></i><b>10.6</b> Chapter Summary</a></li>
+<li class="chapter" data-level="10.7" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#practice-exercises-8"><i class="fa fa-check"></i><b>10.7</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="10.7.1" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#exercise-1-create-a-simple-bivariate-linear-model"><i class="fa fa-check"></i><b>10.7.1</b> Exercise 1: Create a Simple Bivariate Linear Model</a></li>
+<li class="chapter" data-level="10.7.2" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#exercise-2-analyze-residuals-to-assess-model-fit"><i class="fa fa-check"></i><b>10.7.2</b> Exercise 2: Analyze Residuals to Assess Model Fit</a></li>
+<li class="chapter" data-level="10.7.3" data-path="bivariate-linear-models.html"><a href="bivariate-linear-models.html#exercise-3-apply-bivariate-linear-models-to-a-real-world-dataset"><i class="fa fa-check"></i><b>10.7.3</b> Exercise 3: Apply Bivariate Linear Models to a Real-World Dataset</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>11</b> Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="multiple-regression.html"><a href="multiple-regression.html#introduction-to-multiple-regression"><i class="fa fa-check"></i><b>11.1</b> Introduction to Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="multiple-regression.html"><a href="multiple-regression.html#what-is-multiple-regression"><i class="fa fa-check"></i><b>11.1.1</b> What is Multiple Regression?</a></li>
+<li class="chapter" data-level="11.1.2" data-path="multiple-regression.html"><a href="multiple-regression.html#why-use-multiple-regression"><i class="fa fa-check"></i><b>11.1.2</b> Why Use Multiple Regression?</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="multiple-regression.html"><a href="multiple-regression.html#understanding-main-effects-in-multiple-regression"><i class="fa fa-check"></i><b>11.2</b> Understanding Main Effects in Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="multiple-regression.html"><a href="multiple-regression.html#the-concept-of-main-effects"><i class="fa fa-check"></i><b>11.2.1</b> The Concept of Main Effects</a></li>
+<li class="chapter" data-level="11.2.2" data-path="multiple-regression.html"><a href="multiple-regression.html#interpreting-main-effects-in-multiple-regression"><i class="fa fa-check"></i><b>11.2.2</b> Interpreting Main Effects in Multiple Regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="multiple-regression.html"><a href="multiple-regression.html#calculating-and-interpreting-multiple-regression-in-r"><i class="fa fa-check"></i><b>11.3</b> Calculating and Interpreting Multiple Regression in R</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="multiple-regression.html"><a href="multiple-regression.html#step-by-step-guide-to-running-a-multiple-regression-in-r"><i class="fa fa-check"></i><b>11.3.1</b> Step-by-Step Guide to Running a Multiple Regression in R</a></li>
+<li class="chapter" data-level="11.3.2" data-path="multiple-regression.html"><a href="multiple-regression.html#interpreting-the-output-of-a-multiple-regression-model"><i class="fa fa-check"></i><b>11.3.2</b> Interpreting the Output of a Multiple Regression Model</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="multiple-regression.html"><a href="multiple-regression.html#understanding-suppression-in-multiple-regression"><i class="fa fa-check"></i><b>11.4</b> Understanding Suppression in Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="multiple-regression.html"><a href="multiple-regression.html#what-is-suppression"><i class="fa fa-check"></i><b>11.4.1</b> What is Suppression?</a></li>
+<li class="chapter" data-level="11.4.2" data-path="multiple-regression.html"><a href="multiple-regression.html#identifying-suppression-effects"><i class="fa fa-check"></i><b>11.4.2</b> Identifying Suppression Effects</a></li>
+<li class="chapter" data-level="11.4.3" data-path="multiple-regression.html"><a href="multiple-regression.html#practical-implications-of-suppression"><i class="fa fa-check"></i><b>11.4.3</b> Practical Implications of Suppression</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="multiple-regression.html"><a href="multiple-regression.html#visualizing-multiple-regression-results"><i class="fa fa-check"></i><b>11.5</b> Visualizing Multiple Regression Results</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="multiple-regression.html"><a href="multiple-regression.html#creating-plots-for-multiple-regression-in-r"><i class="fa fa-check"></i><b>11.5.1</b> Creating Plots for Multiple Regression in R</a></li>
+<li class="chapter" data-level="11.5.2" data-path="multiple-regression.html"><a href="multiple-regression.html#interpreting-multiple-regression-plots"><i class="fa fa-check"></i><b>11.5.2</b> Interpreting Multiple Regression Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="multiple-regression.html"><a href="multiple-regression.html#including-and-interpreting-categorical-variables-in-multiple-regression"><i class="fa fa-check"></i><b>11.6</b> Including and Interpreting Categorical Variables in Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="11.6.1" data-path="multiple-regression.html"><a href="multiple-regression.html#importance-of-reference-levels-in-categorical-variables"><i class="fa fa-check"></i><b>11.6.1</b> Importance of Reference Levels in Categorical Variables</a></li>
+<li class="chapter" data-level="11.6.2" data-path="multiple-regression.html"><a href="multiple-regression.html#interpreting-categorical-variables-in-multiple-regression"><i class="fa fa-check"></i><b>11.6.2</b> Interpreting Categorical Variables in Multiple Regression</a></li>
+<li class="chapter" data-level="11.6.3" data-path="multiple-regression.html"><a href="multiple-regression.html#effect-coding-best-practice-for-categorical-variables"><i class="fa fa-check"></i><b>11.6.3</b> Effect Coding: Best Practice for Categorical Variables</a></li>
+<li class="chapter" data-level="11.6.4" data-path="multiple-regression.html"><a href="multiple-regression.html#contrast-coding-for-categorical-variables-with-more-than-two-levels"><i class="fa fa-check"></i><b>11.6.4</b> Contrast Coding for Categorical Variables with More Than Two Levels</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="multiple-regression.html"><a href="multiple-regression.html#chapter-summary-10"><i class="fa fa-check"></i><b>11.7</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="multiple-regression.html"><a href="multiple-regression.html#recap-of-key-concepts-2"><i class="fa fa-check"></i><b>11.7.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="11.7.2" data-path="multiple-regression.html"><a href="multiple-regression.html#final-thoughts-2"><i class="fa fa-check"></i><b>11.7.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="multiple-regression.html"><a href="multiple-regression.html#practice-exercises-9"><i class="fa fa-check"></i><b>11.8</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="11.8.1" data-path="multiple-regression.html"><a href="multiple-regression.html#exercise-1-conduct-a-multiple-regression-analysis"><i class="fa fa-check"></i><b>11.8.1</b> Exercise 1: Conduct a Multiple Regression Analysis</a></li>
+<li class="chapter" data-level="11.8.2" data-path="multiple-regression.html"><a href="multiple-regression.html#exercise-2-identifying-a-suppression-effect"><i class="fa fa-check"></i><b>11.8.2</b> Exercise 2: Identifying a Suppression Effect</a></li>
+<li class="chapter" data-level="11.8.3" data-path="multiple-regression.html"><a href="multiple-regression.html#exercise-3-creating-and-interpreting-a-multiple-regression-plot"><i class="fa fa-check"></i><b>11.8.3</b> Exercise 3: Creating and Interpreting a Multiple Regression Plot</a></li>
+<li class="chapter" data-level="11.8.4" data-path="multiple-regression.html"><a href="multiple-regression.html#exercise-4-comparing-bivariate-and-multiple-regression"><i class="fa fa-check"></i><b>11.8.4</b> Exercise 4: Comparing Bivariate and Multiple Regression</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html"><i class="fa fa-check"></i><b>12</b> Interactions in Regression Models</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#introduction-to-interactions"><i class="fa fa-check"></i><b>12.1</b> Introduction to Interactions</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#what-are-interactions"><i class="fa fa-check"></i><b>12.1.1</b> What Are Interactions?</a></li>
+<li class="chapter" data-level="12.1.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#why-are-interactions-important"><i class="fa fa-check"></i><b>12.1.2</b> Why Are Interactions Important?</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#categorical-x-categorical-interactions"><i class="fa fa-check"></i><b>12.2</b> Categorical x Categorical Interactions</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#understanding-categorical-x-categorical-interactions"><i class="fa fa-check"></i><b>12.2.1</b> Understanding Categorical x Categorical Interactions</a></li>
+<li class="chapter" data-level="12.2.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#step-by-step-guide-to-adding-post-hoc-tests"><i class="fa fa-check"></i><b>12.2.2</b> Step-by-Step Guide to Adding Post Hoc Tests</a></li>
+<li class="chapter" data-level="12.2.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#visualizing-the-results-with-error-bars"><i class="fa fa-check"></i><b>12.2.3</b> Visualizing the Results with Error Bars</a></li>
+<li class="chapter" data-level="12.2.4" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#conclusion-19"><i class="fa fa-check"></i><b>12.2.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#linear-x-linear-interactions"><i class="fa fa-check"></i><b>12.3</b> Linear x Linear Interactions</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#understanding-linear-x-linear-interactions"><i class="fa fa-check"></i><b>12.3.1</b> Understanding Linear x Linear Interactions</a></li>
+<li class="chapter" data-level="12.3.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#modeling-linear-x-linear-interactions"><i class="fa fa-check"></i><b>12.3.2</b> Modeling Linear x Linear Interactions</a></li>
+<li class="chapter" data-level="12.3.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#visualizing-linear-x-linear-interactions"><i class="fa fa-check"></i><b>12.3.3</b> Visualizing Linear x Linear Interactions</a></li>
+<li class="chapter" data-level="12.3.4" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#conclusion-20"><i class="fa fa-check"></i><b>12.3.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#categorical-x-linear-interactions"><i class="fa fa-check"></i><b>12.4</b> Categorical x Linear Interactions</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#understanding-categorical-x-linear-interactions"><i class="fa fa-check"></i><b>12.4.1</b> Understanding Categorical x Linear Interactions</a></li>
+<li class="chapter" data-level="12.4.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#modeling-categorical-x-linear-interactions"><i class="fa fa-check"></i><b>12.4.2</b> Modeling Categorical x Linear Interactions</a></li>
+<li class="chapter" data-level="12.4.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#visualizing-categorical-x-linear-interactions"><i class="fa fa-check"></i><b>12.4.3</b> Visualizing Categorical x Linear Interactions</a></li>
+<li class="chapter" data-level="12.4.4" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#conclusion-21"><i class="fa fa-check"></i><b>12.4.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#graphing-multivariate-models"><i class="fa fa-check"></i><b>12.5</b> Graphing Multivariate Models</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#importance-of-visualizing-multivariate-models"><i class="fa fa-check"></i><b>12.5.1</b> Importance of Visualizing Multivariate Models</a></li>
+<li class="chapter" data-level="12.5.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#types-of-graphs-for-interactions"><i class="fa fa-check"></i><b>12.5.2</b> Types of Graphs for Interactions</a></li>
+<li class="chapter" data-level="12.5.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#conclusion-22"><i class="fa fa-check"></i><b>12.5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#chapter-summary-11"><i class="fa fa-check"></i><b>12.6</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#recap-of-key-concepts-3"><i class="fa fa-check"></i><b>12.6.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="12.6.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#final-thoughts-3"><i class="fa fa-check"></i><b>12.6.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#practice-exercises-10"><i class="fa fa-check"></i><b>12.7</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#exercise-1-categorical-x-categorical-interaction"><i class="fa fa-check"></i><b>12.7.1</b> Exercise 1: Categorical x Categorical Interaction</a></li>
+<li class="chapter" data-level="12.7.2" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#exercise-2-linear-x-linear-interaction"><i class="fa fa-check"></i><b>12.7.2</b> Exercise 2: Linear x Linear Interaction</a></li>
+<li class="chapter" data-level="12.7.3" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#exercise-3-categorical-x-linear-interaction"><i class="fa fa-check"></i><b>12.7.3</b> Exercise 3: Categorical x Linear Interaction</a></li>
+<li class="chapter" data-level="12.7.4" data-path="interactions-in-regression-models.html"><a href="interactions-in-regression-models.html#exercise-4-graphing-multivariate-interactions"><i class="fa fa-check"></i><b>12.7.4</b> Exercise 4: Graphing Multivariate Interactions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>13</b> Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="logistic-regression.html"><a href="logistic-regression.html#introduction-to-logistic-regression"><i class="fa fa-check"></i><b>13.1</b> Introduction to Logistic Regression</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="logistic-regression.html"><a href="logistic-regression.html#what-is-logistic-regression"><i class="fa fa-check"></i><b>13.1.1</b> What is Logistic Regression?</a></li>
+<li class="chapter" data-level="13.1.2" data-path="logistic-regression.html"><a href="logistic-regression.html#applications-of-logistic-regression-in-psychology"><i class="fa fa-check"></i><b>13.1.2</b> Applications of Logistic Regression in Psychology</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="logistic-regression.html"><a href="logistic-regression.html#the-logistic-regression-model"><i class="fa fa-check"></i><b>13.2</b> The Logistic Regression Model</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="logistic-regression.html"><a href="logistic-regression.html#understanding-the-logistic-function"><i class="fa fa-check"></i><b>13.2.1</b> Understanding the Logistic Function</a></li>
+<li class="chapter" data-level="13.2.2" data-path="logistic-regression.html"><a href="logistic-regression.html#fitting-a-logistic-regression-model"><i class="fa fa-check"></i><b>13.2.2</b> Fitting a Logistic Regression Model</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="logistic-regression.html"><a href="logistic-regression.html#interpreting-logistic-regression-coefficients"><i class="fa fa-check"></i><b>13.3</b> Interpreting Logistic Regression Coefficients</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="logistic-regression.html"><a href="logistic-regression.html#exponentiating-the-coefficients"><i class="fa fa-check"></i><b>13.3.1</b> Exponentiating the Coefficients</a></li>
+<li class="chapter" data-level="13.3.2" data-path="logistic-regression.html"><a href="logistic-regression.html#understanding-the-odds-ratio"><i class="fa fa-check"></i><b>13.3.2</b> Understanding the Odds Ratio</a></li>
+<li class="chapter" data-level="13.3.3" data-path="logistic-regression.html"><a href="logistic-regression.html#summary-2"><i class="fa fa-check"></i><b>13.3.3</b> Summary:</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="logistic-regression.html"><a href="logistic-regression.html#visualizing-the-odds-ratio"><i class="fa fa-check"></i><b>13.4</b> Visualizing the Odds Ratio</a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="logistic-regression.html"><a href="logistic-regression.html#step-1-loading-and-preparing-the-titanic-dataset"><i class="fa fa-check"></i><b>13.4.1</b> Step 1: Loading and Preparing the Titanic Dataset</a></li>
+<li class="chapter" data-level="13.4.2" data-path="logistic-regression.html"><a href="logistic-regression.html#step-2-calculating-the-odds-ratios"><i class="fa fa-check"></i><b>13.4.2</b> Step 2: Calculating the Odds Ratios</a></li>
+<li class="chapter" data-level="13.4.3" data-path="logistic-regression.html"><a href="logistic-regression.html#step-3-creating-a-dot-plot"><i class="fa fa-check"></i><b>13.4.3</b> Step 3: Creating a Dot Plot</a></li>
+<li class="chapter" data-level="13.4.4" data-path="logistic-regression.html"><a href="logistic-regression.html#step-4-creating-a-bar-graph"><i class="fa fa-check"></i><b>13.4.4</b> Step 4: Creating a Bar Graph</a></li>
+<li class="chapter" data-level="13.4.5" data-path="logistic-regression.html"><a href="logistic-regression.html#interpreting-the-graphs"><i class="fa fa-check"></i><b>13.4.5</b> Interpreting the Graphs</a></li>
+<li class="chapter" data-level="13.4.6" data-path="logistic-regression.html"><a href="logistic-regression.html#communicating-the-results"><i class="fa fa-check"></i><b>13.4.6</b> Communicating the Results</a></li>
+<li class="chapter" data-level="13.4.7" data-path="logistic-regression.html"><a href="logistic-regression.html#summary-3"><i class="fa fa-check"></i><b>13.4.7</b> Summary:</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="logistic-regression.html"><a href="logistic-regression.html#comparing-logistic-regression-with-linear-regression"><i class="fa fa-check"></i><b>13.5</b> Comparing Logistic Regression with Linear Regression</a>
+<ul>
+<li class="chapter" data-level="13.5.1" data-path="logistic-regression.html"><a href="logistic-regression.html#why-not-use-linear-regression-for-binary-outcomes"><i class="fa fa-check"></i><b>13.5.1</b> Why Not Use Linear Regression for Binary Outcomes?</a></li>
+<li class="chapter" data-level="13.5.2" data-path="logistic-regression.html"><a href="logistic-regression.html#advantages-of-logistic-regression"><i class="fa fa-check"></i><b>13.5.2</b> Advantages of Logistic Regression</a></li>
+<li class="chapter" data-level="13.5.3" data-path="logistic-regression.html"><a href="logistic-regression.html#recap"><i class="fa fa-check"></i><b>13.5.3</b> Recap:</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="logistic-regression.html"><a href="logistic-regression.html#checking-model-fit"><i class="fa fa-check"></i><b>13.6</b> Checking Model Fit</a>
+<ul>
+<li class="chapter" data-level="13.6.1" data-path="logistic-regression.html"><a href="logistic-regression.html#why-check-model-fit"><i class="fa fa-check"></i><b>13.6.1</b> Why Check Model Fit?</a></li>
+<li class="chapter" data-level="13.6.2" data-path="logistic-regression.html"><a href="logistic-regression.html#methods-for-assessing-model-fit-in-logistic-regression"><i class="fa fa-check"></i><b>13.6.2</b> Methods for Assessing Model Fit in Logistic Regression</a></li>
+<li class="chapter" data-level="13.6.3" data-path="logistic-regression.html"><a href="logistic-regression.html#techniques-for-diagnosing-potential-issues"><i class="fa fa-check"></i><b>13.6.3</b> Techniques for Diagnosing Potential Issues</a></li>
+<li class="chapter" data-level="13.6.4" data-path="logistic-regression.html"><a href="logistic-regression.html#summary-of-diagnostic-techniques"><i class="fa fa-check"></i><b>13.6.4</b> Summary of Diagnostic Techniques:</a></li>
+<li class="chapter" data-level="13.6.5" data-path="logistic-regression.html"><a href="logistic-regression.html#recap-1"><i class="fa fa-check"></i><b>13.6.5</b> Recap:</a></li>
+</ul></li>
+<li class="chapter" data-level="13.7" data-path="logistic-regression.html"><a href="logistic-regression.html#chapter-summary-12"><i class="fa fa-check"></i><b>13.7</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="13.7.1" data-path="logistic-regression.html"><a href="logistic-regression.html#recap-of-key-concepts-4"><i class="fa fa-check"></i><b>13.7.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="13.7.2" data-path="logistic-regression.html"><a href="logistic-regression.html#final-thoughts-4"><i class="fa fa-check"></i><b>13.7.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="13.8" data-path="logistic-regression.html"><a href="logistic-regression.html#practice-exercises-11"><i class="fa fa-check"></i><b>13.8</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="13.8.1" data-path="logistic-regression.html"><a href="logistic-regression.html#exercise-1-fitting-a-logistic-regression-model"><i class="fa fa-check"></i><b>13.8.1</b> Exercise 1: Fitting a Logistic Regression Model</a></li>
+<li class="chapter" data-level="13.8.2" data-path="logistic-regression.html"><a href="logistic-regression.html#exercise-2-visualizing-logistic-regression-results"><i class="fa fa-check"></i><b>13.8.2</b> Exercise 2: Visualizing Logistic Regression Results</a></li>
+<li class="chapter" data-level="13.8.3" data-path="logistic-regression.html"><a href="logistic-regression.html#exercise-3-interpreting-odds-ratios"><i class="fa fa-check"></i><b>13.8.3</b> Exercise 3: Interpreting Odds Ratios</a></li>
+<li class="chapter" data-level="13.8.4" data-path="logistic-regression.html"><a href="logistic-regression.html#exercise-4-checking-model-fit"><i class="fa fa-check"></i><b>13.8.4</b> Exercise 4: Checking Model Fit</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html"><i class="fa fa-check"></i><b>14</b> Goodness of Fit</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#what-is-goodness-of-fit"><i class="fa fa-check"></i><b>14.1</b> What is Goodness of Fit?</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#why-goodness-of-fit-matters"><i class="fa fa-check"></i><b>14.1.1</b> Why Goodness of Fit Matters</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#chi-square"><i class="fa fa-check"></i><b>14.2</b> Chi-Square</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#understanding-the-chi-square-test"><i class="fa fa-check"></i><b>14.2.1</b> Understanding the Chi-Square Test</a></li>
+<li class="chapter" data-level="14.2.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#calculating-chi-square-in-r"><i class="fa fa-check"></i><b>14.2.2</b> Calculating Chi-Square in R</a></li>
+<li class="chapter" data-level="14.2.3" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#real-world-applications-3"><i class="fa fa-check"></i><b>14.2.3</b> Real-World Applications</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#r-squared"><i class="fa fa-check"></i><b>14.3</b> R-Squared</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#what-is-r-squared"><i class="fa fa-check"></i><b>14.3.1</b> What is R-Squared?</a></li>
+<li class="chapter" data-level="14.3.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#calculating-r-squared-in-r"><i class="fa fa-check"></i><b>14.3.2</b> Calculating R-Squared in R</a></li>
+<li class="chapter" data-level="14.3.3" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#adjusted-r-squared"><i class="fa fa-check"></i><b>14.3.3</b> Adjusted R-Squared</a></li>
+<li class="chapter" data-level="14.3.4" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#real-world-applications-4"><i class="fa fa-check"></i><b>14.3.4</b> Real-World Applications</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#the-f-test-for-comparing-models"><i class="fa fa-check"></i><b>14.4</b> The F-Test for Comparing Models</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#what-is-the-f-test"><i class="fa fa-check"></i><b>14.4.1</b> What is the F-Test?</a></li>
+<li class="chapter" data-level="14.4.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#performing-the-f-test-in-r"><i class="fa fa-check"></i><b>14.4.2</b> Performing the F-Test in R</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#understanding-the-f-distribution"><i class="fa fa-check"></i><b>14.5</b> Understanding the F-Distribution</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#what-is-the-f-distribution"><i class="fa fa-check"></i><b>14.5.1</b> What is the F-Distribution?</a></li>
+<li class="chapter" data-level="14.5.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#visualizing-the-f-distribution-in-r"><i class="fa fa-check"></i><b>14.5.2</b> Visualizing the F-Distribution in R</a></li>
+<li class="chapter" data-level="14.5.3" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#real-world-applications-5"><i class="fa fa-check"></i><b>14.5.3</b> Real-World Applications</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#putting-it-all-together-assessing-model-fit-in-practice"><i class="fa fa-check"></i><b>14.6</b> Putting It All Together – Assessing Model Fit in Practice</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#comprehensive-example"><i class="fa fa-check"></i><b>14.6.1</b> Comprehensive Example</a></li>
+<li class="chapter" data-level="14.6.2" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#best-practices-for-assessing-goodness-of-fit"><i class="fa fa-check"></i><b>14.6.2</b> Best Practices for Assessing Goodness of Fit</a></li>
+</ul></li>
+<li class="chapter" data-level="14.7" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#chapter-summary-13"><i class="fa fa-check"></i><b>14.7</b> Chapter Summary</a></li>
+<li class="chapter" data-level="14.8" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#practice-exercises-12"><i class="fa fa-check"></i><b>14.8</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="14.8.1" data-path="goodness-of-fit.html"><a href="goodness-of-fit.html#section-7-practice-exercises"><i class="fa fa-check"></i><b>14.8.1</b> Section 7: Practice Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="statistical-power.html"><a href="statistical-power.html"><i class="fa fa-check"></i><b>15</b> Statistical Power</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="statistical-power.html"><a href="statistical-power.html#introduction-to-statistical-power"><i class="fa fa-check"></i><b>15.1</b> Introduction to Statistical Power</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="statistical-power.html"><a href="statistical-power.html#definition-of-statistical-power"><i class="fa fa-check"></i><b>15.1.1</b> Definition of Statistical Power</a></li>
+<li class="chapter" data-level="15.1.2" data-path="statistical-power.html"><a href="statistical-power.html#the-role-of-power-in-psychological-research"><i class="fa fa-check"></i><b>15.1.2</b> The Role of Power in Psychological Research</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="statistical-power.html"><a href="statistical-power.html#understanding-type-i-and-type-ii-errors"><i class="fa fa-check"></i><b>15.2</b> Understanding Type I and Type II Errors</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="statistical-power.html"><a href="statistical-power.html#type-i-error-false-positive"><i class="fa fa-check"></i><b>15.2.1</b> Type I Error (False Positive)</a></li>
+<li class="chapter" data-level="15.2.2" data-path="statistical-power.html"><a href="statistical-power.html#type-ii-error-false-negative"><i class="fa fa-check"></i><b>15.2.2</b> Type II Error (False Negative)</a></li>
+<li class="chapter" data-level="15.2.3" data-path="statistical-power.html"><a href="statistical-power.html#balancing-type-i-and-type-ii-errors"><i class="fa fa-check"></i><b>15.2.3</b> Balancing Type I and Type II Errors</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="statistical-power.html"><a href="statistical-power.html#factors-affecting-power"><i class="fa fa-check"></i><b>15.3</b> Factors Affecting Power</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="statistical-power.html"><a href="statistical-power.html#sample-size"><i class="fa fa-check"></i><b>15.3.1</b> Sample Size</a></li>
+<li class="chapter" data-level="15.3.2" data-path="statistical-power.html"><a href="statistical-power.html#effect-size"><i class="fa fa-check"></i><b>15.3.2</b> Effect Size</a></li>
+<li class="chapter" data-level="15.3.3" data-path="statistical-power.html"><a href="statistical-power.html#significance-level-alpha"><i class="fa fa-check"></i><b>15.3.3</b> Significance Level (Alpha)</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="statistical-power.html"><a href="statistical-power.html#calculating-power-in-r"><i class="fa fa-check"></i><b>15.4</b> Calculating Power in R</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="statistical-power.html"><a href="statistical-power.html#introduction-to-power-analysis"><i class="fa fa-check"></i><b>15.4.1</b> Introduction to Power Analysis</a></li>
+<li class="chapter" data-level="15.4.2" data-path="statistical-power.html"><a href="statistical-power.html#step-by-step-guide-to-conducting-power-analysis-in-r"><i class="fa fa-check"></i><b>15.4.2</b> Step-by-Step Guide to Conducting Power Analysis in R</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="statistical-power.html"><a href="statistical-power.html#practical-considerations-and-challenges"><i class="fa fa-check"></i><b>15.5</b> Practical Considerations and Challenges</a>
+<ul>
+<li class="chapter" data-level="15.5.1" data-path="statistical-power.html"><a href="statistical-power.html#common-challenges-in-achieving-adequate-power"><i class="fa fa-check"></i><b>15.5.1</b> Common Challenges in Achieving Adequate Power</a></li>
+<li class="chapter" data-level="15.5.2" data-path="statistical-power.html"><a href="statistical-power.html#ethical-considerations-2"><i class="fa fa-check"></i><b>15.5.2</b> Ethical Considerations</a></li>
+</ul></li>
+<li class="chapter" data-level="15.6" data-path="statistical-power.html"><a href="statistical-power.html#real-world-applications-of-power-analysis-in-psychology"><i class="fa fa-check"></i><b>15.6</b> Real-World Applications of Power Analysis in Psychology</a>
+<ul>
+<li class="chapter" data-level="15.6.1" data-path="statistical-power.html"><a href="statistical-power.html#hypothetical-case-studies"><i class="fa fa-check"></i><b>15.6.1</b> Hypothetical Case Studies</a></li>
+<li class="chapter" data-level="15.6.2" data-path="statistical-power.html"><a href="statistical-power.html#best-practices-for-ensuring-adequate-power"><i class="fa fa-check"></i><b>15.6.2</b> Best Practices for Ensuring Adequate Power</a></li>
+</ul></li>
+<li class="chapter" data-level="15.7" data-path="statistical-power.html"><a href="statistical-power.html#chapter-summary-14"><i class="fa fa-check"></i><b>15.7</b> Chapter Summary</a>
+<ul>
+<li class="chapter" data-level="15.7.1" data-path="statistical-power.html"><a href="statistical-power.html#recap-of-key-concepts-5"><i class="fa fa-check"></i><b>15.7.1</b> Recap of Key Concepts</a></li>
+<li class="chapter" data-level="15.7.2" data-path="statistical-power.html"><a href="statistical-power.html#final-thoughts-5"><i class="fa fa-check"></i><b>15.7.2</b> Final Thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="15.8" data-path="statistical-power.html"><a href="statistical-power.html#practice-exercises-13"><i class="fa fa-check"></i><b>15.8</b> Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="15.8.1" data-path="statistical-power.html"><a href="statistical-power.html#exercise-1-calculate-the-statistical-power-of-a-study-using-a-given-dataset-and-interpret-the-results"><i class="fa fa-check"></i><b>15.8.1</b> Exercise 1: Calculate the Statistical Power of a Study Using a Given Dataset and Interpret the Results</a></li>
+<li class="chapter" data-level="15.8.2" data-path="statistical-power.html"><a href="statistical-power.html#exercise-2-conduct-a-power-analysis-in-r-to-determine-the-required-sample-size-for-a-psychological-experiment-with-a-specified-effect-size-and-significance-level"><i class="fa fa-check"></i><b>15.8.2</b> Exercise 2: Conduct a Power Analysis in R to Determine the Required Sample Size for a Psychological Experiment with a Specified Effect Size and Significance Level</a></li>
+<li class="chapter" data-level="15.8.3" data-path="statistical-power.html"><a href="statistical-power.html#exercise-3-analyze-a-scenario-where-a-type-i-error-occurred-in-a-psychological-study"><i class="fa fa-check"></i><b>15.8.3</b> Exercise 3: Analyze a Scenario Where a Type I Error Occurred in a Psychological Study</a></li>
+<li class="chapter" data-level="15.8.4" data-path="statistical-power.html"><a href="statistical-power.html#exercise-4-analyze-a-scenario-where-a-type-ii-error-occurred-in-a-psychological-study"><i class="fa fa-check"></i><b>15.8.4</b> Exercise 4: Analyze a Scenario Where a Type II Error Occurred in a Psychological Study</a></li>
+<li class="chapter" data-level="15.8.5" data-path="statistical-power.html"><a href="statistical-power.html#exercise-5-compare-the-impact-of-changing-the-sample-size-effect-size-and-significance-level-on-power-using-different-hypothetical-scenarios-in-r"><i class="fa fa-check"></i><b>15.8.5</b> Exercise 5: Compare the Impact of Changing the Sample Size, Effect Size, and Significance Level on Power Using Different Hypothetical Scenarios in R</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html"><i class="fa fa-check"></i>Appendix: Answers to Chapter Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-1-exercises"><i class="fa fa-check"></i>Answers to Chapter 1 Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-familiarization-with-r-studio-1"><i class="fa fa-check"></i>Exercise 1: Familiarization with R Studio</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-basic-data-entry-and-operation-1"><i class="fa fa-check"></i>Exercise 2: Basic Data Entry and Operation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-introduction-to-r-markdown-1"><i class="fa fa-check"></i>Exercise 3: Introduction to R Markdown</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-exploring-the-help-pane-1"><i class="fa fa-check"></i>Exercise 4: Exploring the Help Pane</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-2-exercises"><i class="fa fa-check"></i>Answers to Chapter 2 Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-identifying-data-types-1"><i class="fa fa-check"></i>Exercise 1: Identifying Data Types</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-designing-a-study-1"><i class="fa fa-check"></i>Exercise 2: Designing a Study</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-evaluating-research-1"><i class="fa fa-check"></i>Exercise 3: Evaluating Research</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-3-exercises"><i class="fa fa-check"></i>Answers to Chapter 3 Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-evaluating-reliability-1"><i class="fa fa-check"></i>Exercise 1: Evaluating Reliability</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-assessing-validity-1"><i class="fa fa-check"></i>Exercise 2: Assessing Validity</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-identifying-and-addressing-data-collection-errors-1"><i class="fa fa-check"></i>Exercise 3: Identifying and Addressing Data Collection Errors</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-triangulation-to-enhance-validity-1"><i class="fa fa-check"></i>Exercise 4: Triangulation to Enhance Validity</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-5-role-play-on-ethical-data-collection-1"><i class="fa fa-check"></i>Exercise 5: Role Play on Ethical Data Collection</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-6-real-world-application-1"><i class="fa fa-check"></i>Exercise 6: Real-World Application</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-4-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 4 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-calculating-descriptive-statistics-1"><i class="fa fa-check"></i>Exercise 1: Calculating Descriptive Statistics</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-understanding-the-normal-distribution-1"><i class="fa fa-check"></i>Exercise 2: Understanding the Normal Distribution</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-applying-the-t-distribution-1"><i class="fa fa-check"></i>Exercise 3: Applying the T-Distribution</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-defining-and-simulating-sample-spaces-1"><i class="fa fa-check"></i>Exercise 4: Defining and Simulating Sample Spaces</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-5-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 5 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-importing-data-1"><i class="fa fa-check"></i>Exercise 1: Importing Data</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-cleaning-data-with-dplyr-1"><i class="fa fa-check"></i>Exercise 2: Cleaning Data with dplyr</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-generating-descriptive-statistics-with-psych-1"><i class="fa fa-check"></i>Exercise 3: Generating Descriptive Statistics with <code>psych</code></a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-visualizing-data-with-psych-1"><i class="fa fa-check"></i>Exercise 4: Visualizing Data with psych</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-6-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 6 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-mean-centering-1"><i class="fa fa-check"></i>Exercise 1: Mean-Centering</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-z-scores-1"><i class="fa fa-check"></i>Exercise 2: Z-Scores</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-combining-mean-centering-and-z-scores-1"><i class="fa fa-check"></i>Exercise 3: Combining Mean-Centering and Z-Scores</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-non-linear-transformations-1"><i class="fa fa-check"></i>Exercise 4: Non-Linear Transformations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-7-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 7 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-create-an-apa-compliant-bar-graph-1"><i class="fa fa-check"></i>Exercise 1: Create an APA-Compliant Bar Graph</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-modify-a-basic-ggplot2-plot-to-meet-apa-standards-1"><i class="fa fa-check"></i>Exercise 2: Modify a Basic ggplot2 Plot to Meet APA Standards</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-create-an-apa-compliant-line-graph-and-save-it-as-a-high-resolution-image-1"><i class="fa fa-check"></i>Exercise 3: Create an APA-Compliant Line Graph and Save It as a High-Resolution Image</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-8-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 8 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="15.8.6" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-standard-error-calculation-and-interpretation"><i class="fa fa-check"></i><b>15.8.6</b> Exercise 1: Standard Error Calculation and Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-confidence-interval-calculation-and-interpretation"><i class="fa fa-check"></i>Exercise 2: Confidence Interval Calculation and Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-independent-samples-t-test-interpretation"><i class="fa fa-check"></i>Exercise 3: Independent Samples t-Test Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-paired-samples-t-test-interpretation"><i class="fa fa-check"></i>Exercise 4: Paired Samples t-Test Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-5-significance-and-effect-size-interpretation"><i class="fa fa-check"></i>Exercise 5: Significance and Effect Size Interpretation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-9-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 9 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-pearson-correlation-coefficient-calculation-and-interpretation"><i class="fa fa-check"></i>Exercise 1: Pearson Correlation Coefficient Calculation and Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-scatter-plot-with-trend-line"><i class="fa fa-check"></i>Exercise 2: Scatter Plot with Trend Line</a></li>
+<li class="chapter" data-level="15.8.7" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-analyzing-the-size-of-the-correlation"><i class="fa fa-check"></i><b>15.8.7</b> Exercise 3: Analyzing the Size of the Correlation</a></li>
+<li class="chapter" data-level="15.8.8" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-impact-of-a-third-variable-confounder-and-controlling-for-it"><i class="fa fa-check"></i><b>15.8.8</b> Exercise 4: Impact of a Third Variable (Confounder) and Controlling for It</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-5-evaluating-correlation-and-causality"><i class="fa fa-check"></i>Exercise 5: Evaluating Correlation and Causality</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-10-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 10 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-create-a-simple-bivariate-linear-model-1"><i class="fa fa-check"></i>Exercise 1: Create a Simple Bivariate Linear Model</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-analyze-residuals-to-assess-model-fit-1"><i class="fa fa-check"></i>Exercise 2: Analyze Residuals to Assess Model Fit</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-apply-bivariate-linear-models-to-a-real-world-dataset-1"><i class="fa fa-check"></i>Exercise 3: Apply Bivariate Linear Models to a Real-World Dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-11-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 11 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-fit-the-multiple-regression"><i class="fa fa-check"></i>Exercise 1: Fit the Multiple Regression</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-compare-bivariate-vs-multivariate"><i class="fa fa-check"></i>Exercise 2: Compare Bivariate vs Multivariate</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-plot-sleep-quality"><i class="fa fa-check"></i>Exercise 3: Plot Sleep Quality</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-bivariate-vs-multivariate"><i class="fa fa-check"></i>Exercise 4: Bivariate vs Multivariate</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-12-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 12 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-categorical-x-categorical-interaction-1"><i class="fa fa-check"></i>Exercise 1: Categorical x Categorical Interaction</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-linear-x-linear-interaction-1"><i class="fa fa-check"></i>Exercise 2: Linear x Linear Interaction</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-categorical-x-linear-interaction-1"><i class="fa fa-check"></i>Exercise 3: Categorical x Linear Interaction</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-graphing-multivariate-interactions-1"><i class="fa fa-check"></i>Exercise 4: Graphing Multivariate Interactions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-13-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 13 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-fitting-a-logistic-regression-model-1"><i class="fa fa-check"></i>Exercise 1: Fitting a Logistic Regression Model</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-visualizing-logistic-regression-results-1"><i class="fa fa-check"></i>Exercise 2: Visualizing Logistic Regression Results</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-interpreting-odds-ratios-1"><i class="fa fa-check"></i>Exercise 3: Interpreting Odds Ratios</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-checking-model-fit-1"><i class="fa fa-check"></i>Exercise 4: Checking Model Fit</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-14-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 14 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-chi-square-goodness-of-fit-test-1"><i class="fa fa-check"></i>Exercise 1: Chi-Square Goodness of Fit Test</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-calculating-r-squared"><i class="fa fa-check"></i>Exercise 2: Calculating R-Squared</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-f-test-for-comparing-models"><i class="fa fa-check"></i>Exercise 3: F-Test for Comparing Models</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-visualizing-the-f-distribution"><i class="fa fa-check"></i>Exercise 4: Visualizing the F-Distribution</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-5-comprehensive-analysis-1"><i class="fa fa-check"></i>Exercise 5: Comprehensive Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-15-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 15 Practice Exercises</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-power-calculation-interpretation"><i class="fa fa-check"></i>Exercise 1: Power Calculation Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-sample-size-calculation-interpretation"><i class="fa fa-check"></i>Exercise 2: Sample Size Calculation Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-type-i-error-analysis-interpretation"><i class="fa fa-check"></i>Exercise 3: Type I Error Analysis Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-type-ii-error-analysis-interpretation"><i class="fa fa-check"></i>Exercise 4: Type II Error Analysis Interpretation</a></li>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-5-power-comparison-interpretation"><i class="fa fa-check"></i>Exercise 5: Power Comparison Interpretation</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<p>Please see the <a href="https://bookdown.org">bookdown documentation</a> for more information.</p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Psychological Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Introduction to Psychological Statistics</h1>
+<h2 class="subtitle"><em>Understanding People Through Data</em></h2>
+<p class="author"><em>A.D.Perez, PhD</em></p>
+<p class="date"><em>2024-08-25</em></p>
+</div>
+<div id="welcome-to-the-online-book-for-psychological-statistics" class="section level1 unnumbered hasAnchor foreword">
+<h1>Welcome to the Online Book for Psychological Statistics<a href="index.html#welcome-to-the-online-book-for-psychological-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="understanding-people-through-data" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Understanding People Through Data<a href="index.html#understanding-people-through-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This online textbook serves as a fundamental guide and companion for students venturing into the scientific study of people through statistics and probability. It is designed to accompany our course, which introduces essential statistical concepts and tools needed to understand and conduct psychological research.</p>
+</div>
+<div id="what-you-will-learn" class="section level2 hasAnchor" number="0.2">
+<h2><span class="header-section-number">0.2</span> What You Will Learn<a href="index.html#what-you-will-learn" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The content of this book spans several key topics:</p>
+<ul>
+<li><strong>Descriptive Statistics:</strong> Learn how to collect, summarize, and present data effectively.</li>
+<li><strong>Linear Regression:</strong> Understand the relationship between variables and how to predict outcomes.</li>
+<li><strong>Design of Experiments:</strong> Explore how experiments are structured to test hypotheses and examine cause and effect.</li>
+<li><strong>Introductory Probability:</strong> Gain insights into the likelihood and patterns of events.</li>
+<li><strong>Random Variables, Normal Distribution, and T-Distribution:</strong> Delve into the behaviors of data under different conditions and understand the foundational distributions in statistics.</li>
+<li><strong>Statistical Inference:</strong> Master the techniques for making conclusions about a population based on sample data, including confidence intervals and significance tests.</li>
+</ul>
+</div>
+<div id="emphasis-on-psychological-research" class="section level2 hasAnchor" number="0.3">
+<h2><span class="header-section-number">0.3</span> Emphasis on Psychological Research<a href="index.html#emphasis-on-psychological-research" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This book emphasizes methods commonly used by psychologists to:</p>
+<ul>
+<li>Collect and describe data.</li>
+<li>Graph and interpret patterns in data concerning human behavior and interactions.</li>
+<li>Report research findings effectively in research papers.</li>
+</ul>
+<p>Throughout this text, real-world examples, case studies, and datasets specific to psychological research will be used to illustrate how statistical tools can provide insights into complex human behaviors and relationships.</p>
+</div>
+<div id="hands-on-learning-with-r-and-r-studio" class="section level2 hasAnchor" number="0.4">
+<h2><span class="header-section-number">0.4</span> Hands-On Learning with R and R Studio<a href="index.html#hands-on-learning-with-r-and-r-studio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Each chapter includes practical R code examples and exercises that require you to analyze data and interpret results using R and R Studio. This hands-on approach ensures that you not only learn the theoretical aspects of statistics but also acquire the skills to implement these techniques effectively.</li>
+</ul>
+<p>Whether you are a student of psychology or a budding researcher, this book will equip you with the statistical understanding and tools necessary to excel in your studies and future careers. Dive into the fascinating world of psychological statistics and discover how data can reveal insights about human nature!</p>
+</div>
+</div>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction-to-r-and-r-studio.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/AmandaDPerez/ZTC-RM/edit/main/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/AmandaDPerez/ZTC-RM/blob/main/index.Rmd",
+"text": null
+},
+"download": ["psych-stats-book.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* Preface No Numbering */
+.foreword h1, .foreword h2 {
+  number: none;
+}
+
+/* General Text */
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Paragraph Captions */
+p.caption {
+  color: #555;
+  margin-top: 15px;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Code Blocks */
+pre, pre code {
+  background-color: #1e1e1e !important; /* Dark background */
+  border: 2px solid #00ff00 !important; /* Neon green border */
+  padding: 15px !important;
+  border-radius: 8px !important;
+  color: #ffffff !important; /* Default white text */
+  overflow-x: auto !important;
+}
+
+/* Remove borders or backgrounds inside code blocks */
+pre code {
+  border: none !important;
+  background: none !important;
+}
+
+/* Syntax Highlighting */
+
+/* .cf - Likely Function Names */
+span.cf {
+  color: #ffff00 !important; /* Neon yellow */
+}
+
+/* .sc - Likely Strings */
+span.sc {
+  color: #00ffff !important; /* Neon cyan */
+}
+
+/* .fu - Likely Function Declarations or Keywords */
+span.fu {
+  color: #ff00ff !important; /* Neon pink */
+}
+
+/* .st - Likely Strings */
+span.st {
+  color: #00ffff !important; /* Neon cyan */
+}
+
+/* .at - Likely Attributes or Variables */
+span.at {
+  color: #ff4500 !important; /* Neon orange */
+}
+
+/* .cn - Likely Constants */
+span.cn {
+  color: #ff1493 !important; /* Neon pink */
+}
+
+/* .dv - Likely Numbers */
+span.dv {
+  color: #00ff00 !important; /* Neon green */
+}
+
+/* Inline Code */
+p code {
+  background-color: #333333 !important; /* Darker background for inline code */
+  color: #ff0095 !important; /* Neon pink text */
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+}
+
+
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", serif;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.2em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Figures */
+figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+  font-style: italic;
+}
