@@ -902,20 +902,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html"><i class="fa fa-check"></i>Appendix: Answers to Chapter Exercises</a>
 <ul>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-1-exercises"><i class="fa fa-check"></i>Answers to Chapter 1 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-1-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 1 Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-familiarization-with-r-studio-1"><i class="fa fa-check"></i>Exercise 1: Familiarization with R Studio</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-basic-data-entry-and-operation-1"><i class="fa fa-check"></i>Exercise 2: Basic Data Entry and Operation</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-introduction-to-r-markdown-1"><i class="fa fa-check"></i>Exercise 3: Introduction to R Markdown</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-exploring-the-help-pane-1"><i class="fa fa-check"></i>Exercise 4: Exploring the Help Pane</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-2-exercises"><i class="fa fa-check"></i>Answers to Chapter 2 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-2-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 2 Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-identifying-data-types-1"><i class="fa fa-check"></i>Exercise 1: Identifying Data Types</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-designing-a-study-1"><i class="fa fa-check"></i>Exercise 2: Designing a Study</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-evaluating-research-1"><i class="fa fa-check"></i>Exercise 3: Evaluating Research</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-3-exercises"><i class="fa fa-check"></i>Answers to Chapter 3 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-practice-exercises"><i class="fa fa-check"></i>Answers to Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-evaluating-reliability-1"><i class="fa fa-check"></i>Exercise 1: Evaluating Reliability</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-assessing-validity-1"><i class="fa fa-check"></i>Exercise 2: Assessing Validity</a></li>
@@ -1122,7 +1122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="step-by-step-guide-to-calculating-correlation-in-r" class="section level3 hasAnchor" number="9.2.2">
 <h3><span class="header-section-number">9.2.2</span> Step-by-Step Guide to Calculating Correlation in R<a href="correlations.html#step-by-step-guide-to-calculating-correlation-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Calculating Pearson’s r in R is straightforward, and it only requires a single function: <code>cor()</code>. Let’s walk through a simple example to illustrate how to do this.</p>
+<p>Calculating Pearson’s r in R is straightforward, and it only requires a single function: <code>cor.test()</code>. Let’s walk through a simple example to illustrate how to do this.</p>
 <p><strong>Example: Calculating the Correlation Between Study Time and Exam Scores</strong></p>
 <p>Imagine you have data on how many hours a group of students spent studying for an exam and their corresponding exam scores. You want to see if there’s a relationship between the two.</p>
 <p><strong>R Code Example</strong>:</p>
@@ -1131,9 +1131,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb187-3"><a href="correlations.html#cb187-3" tabindex="-1"></a>exam_scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">55</span>, <span class="dv">60</span>, <span class="dv">65</span>, <span class="dv">70</span>)</span>
 <span id="cb187-4"><a href="correlations.html#cb187-4" tabindex="-1"></a></span>
 <span id="cb187-5"><a href="correlations.html#cb187-5" tabindex="-1"></a><span class="co"># Calculate Pearson&#39;s correlation coefficient</span></span>
-<span id="cb187-6"><a href="correlations.html#cb187-6" tabindex="-1"></a>correlation <span class="ot">&lt;-</span> <span class="fu">cor</span>(study_time, exam_scores)</span>
+<span id="cb187-6"><a href="correlations.html#cb187-6" tabindex="-1"></a>correlation <span class="ot">&lt;-</span> <span class="fu">cor.test</span>(study_time, exam_scores)</span>
 <span id="cb187-7"><a href="correlations.html#cb187-7" tabindex="-1"></a>correlation</span></code></pre></div>
-<pre><code>## [1] 1</code></pre>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  study_time and exam_scores
+## t = Inf, df = 3, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  1 1
+## sample estimates:
+## cor 
+##   1</code></pre>
 <p><strong>Interpretation</strong>: In this case, the correlation coefficient is 1, indicating a perfect positive correlation. This means that as study time increases, exam scores increase proportionally. It’s important to note that in real-world data, perfect correlations are rare, and this example is simplified to illustrate the concept.</p>
 </div>
 <div id="visualizing-correlation-with-ggplot2" class="section level3 hasAnchor" number="9.2.3">
@@ -1246,10 +1256,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb195-3"><a href="correlations.html#cb195-3" tabindex="-1"></a>sleep_quality <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">60</span>, <span class="dv">65</span>, <span class="dv">70</span>, <span class="dv">75</span>, <span class="dv">80</span>)</span>
 <span id="cb195-4"><a href="correlations.html#cb195-4" tabindex="-1"></a></span>
 <span id="cb195-5"><a href="correlations.html#cb195-5" tabindex="-1"></a><span class="co"># Calculate correlation in both directions</span></span>
-<span id="cb195-6"><a href="correlations.html#cb195-6" tabindex="-1"></a><span class="fu">cor</span>(stress, sleep_quality)</span></code></pre></div>
-<pre><code>## [1] -1</code></pre>
-<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="correlations.html#cb197-1" tabindex="-1"></a><span class="fu">cor</span>(sleep_quality, stress)</span></code></pre></div>
-<pre><code>## [1] -1</code></pre>
+<span id="cb195-6"><a href="correlations.html#cb195-6" tabindex="-1"></a><span class="fu">cor.test</span>(stress, sleep_quality)</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  stress and sleep_quality
+## t = -Inf, df = 3, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  -1 -1
+## sample estimates:
+## cor 
+##  -1</code></pre>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="correlations.html#cb197-1" tabindex="-1"></a><span class="fu">cor.test</span>(sleep_quality, stress)</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  sleep_quality and stress
+## t = -Inf, df = 3, p-value &lt; 2.2e-16
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  -1 -1
+## sample estimates:
+## cor 
+##  -1</code></pre>
 <p><strong>Interpretation</strong>: In this example, the correlation between stress and sleep quality is -1, indicating a perfect negative correlation. However, note that the correlation value is the same regardless of whether stress is considered the independent variable and sleep quality the dependent variable or vice versa. This demonstrates that the order in which you analyze the variables does not affect the correlation value—highlighting the lack of directionality in correlation.</p>
 </div>
 <div id="symmetry-of-correlation" class="section level3 hasAnchor" number="9.4.2">
