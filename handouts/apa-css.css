@@ -1,0 +1,21 @@
+/* Force Times New Roman and black color for table titles */
+h2.tab_model_title, .tab_model_title, h2, .tab_model h2, h2.tab_model_title {
+  color: black !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure the entire table uses Times New Roman */
+table {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 12px !important;
+}
+
+/* Override any Bootstrap or theme-related text color */
+body, .tab_model, .tab_model table, .tab_model_title {
+  color: black !important;
+}
