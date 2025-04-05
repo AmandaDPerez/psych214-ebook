@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 13 Logistic Regression | Introduction to Psychological Statistics</title>
   <meta name="description" content="Chapter 13 Logistic Regression | Introduction to Psychological Statistics" />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 13 Logistic Regression | Introduction to Psychological Statistics" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="A.D.Perez, PhD" />
 
 
-<meta name="date" content="2024-08-25" />
+<meta name="date" content="2025-04-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -53,27 +53,27 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="libs/rglWebGL-binding-1.3.1/rglWebGL.js"></script>
-<link href="libs/rglwidgetClass-1.3.1/rgl.css" rel="stylesheet" />
-<script src="libs/rglwidgetClass-1.3.1/rglClass.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/utils.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/buffer.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/subscenes.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/shaders.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/shadersrc.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/textures.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/projection.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/mouse.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/init.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/pieces.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/draw.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/controls.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/selection.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/rglTimer.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/pretty.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/axes.src.js"></script>
-<script src="libs/rglwidgetClass-1.3.1/animation.src.js"></script>
-<script src="libs/CanvasMatrix4-1.3.1/CanvasMatrix.src.js"></script>
+<script src="libs/rglWebGL-binding-1.3.18/rglWebGL.js"></script>
+<link href="libs/rglwidgetClass-1.3.18/rgl.css" rel="stylesheet" />
+<script src="libs/rglwidgetClass-1.3.18/rglClass.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/utils.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/buffer.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/subscenes.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/shaders.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/shadersrc.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/textures.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/projection.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/mouse.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/init.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/pieces.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/draw.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/controls.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/selection.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/rglTimer.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/pretty.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/axes.src.js"></script>
+<script src="libs/rglwidgetClass-1.3.18/animation.src.js"></script>
+<script src="libs/CanvasMatrix4-1.3.18/CanvasMatrix.src.js"></script>
 
 
 <style type="text/css">
@@ -693,8 +693,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="11.6.1" data-path="multiple-regression.html"><a href="multiple-regression.html#importance-of-reference-levels-in-categorical-variables"><i class="fa fa-check"></i><b>11.6.1</b> Importance of Reference Levels in Categorical Variables</a></li>
 <li class="chapter" data-level="11.6.2" data-path="multiple-regression.html"><a href="multiple-regression.html#interpreting-categorical-variables-in-multiple-regression"><i class="fa fa-check"></i><b>11.6.2</b> Interpreting Categorical Variables in Multiple Regression</a></li>
-<li class="chapter" data-level="11.6.3" data-path="multiple-regression.html"><a href="multiple-regression.html#effect-coding-best-practice-for-categorical-variables"><i class="fa fa-check"></i><b>11.6.3</b> Effect Coding: Best Practice for Categorical Variables</a></li>
-<li class="chapter" data-level="11.6.4" data-path="multiple-regression.html"><a href="multiple-regression.html#contrast-coding-for-categorical-variables-with-more-than-two-levels"><i class="fa fa-check"></i><b>11.6.4</b> Contrast Coding for Categorical Variables with More Than Two Levels</a></li>
+<li class="chapter" data-level="11.6.3" data-path="multiple-regression.html"><a href="multiple-regression.html#categorical-variables-with-more-than-two-levels"><i class="fa fa-check"></i><b>11.6.3</b> Categorical Variables with More Than Two Levels</a></li>
 </ul></li>
 <li class="chapter" data-level="11.7" data-path="multiple-regression.html"><a href="multiple-regression.html#chapter-summary-10"><i class="fa fa-check"></i><b>11.7</b> Chapter Summary</a>
 <ul>
@@ -902,20 +901,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html"><i class="fa fa-check"></i>Appendix: Answers to Chapter Exercises</a>
 <ul>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-1-exercises"><i class="fa fa-check"></i>Answers to Chapter 1 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-1-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 1 Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-familiarization-with-r-studio-1"><i class="fa fa-check"></i>Exercise 1: Familiarization with R Studio</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-basic-data-entry-and-operation-1"><i class="fa fa-check"></i>Exercise 2: Basic Data Entry and Operation</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-introduction-to-r-markdown-1"><i class="fa fa-check"></i>Exercise 3: Introduction to R Markdown</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-4-exploring-the-help-pane-1"><i class="fa fa-check"></i>Exercise 4: Exploring the Help Pane</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-2-exercises"><i class="fa fa-check"></i>Answers to Chapter 2 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-2-practice-exercises"><i class="fa fa-check"></i>Answers to Chapter 2 Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-identifying-data-types-1"><i class="fa fa-check"></i>Exercise 1: Identifying Data Types</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-designing-a-study-1"><i class="fa fa-check"></i>Exercise 2: Designing a Study</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-3-evaluating-research-1"><i class="fa fa-check"></i>Exercise 3: Evaluating Research</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-chapter-3-exercises"><i class="fa fa-check"></i>Answers to Chapter 3 Exercises</a>
+<li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#answers-to-practice-exercises"><i class="fa fa-check"></i>Answers to Practice Exercises</a>
 <ul>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-1-evaluating-reliability-1"><i class="fa fa-check"></i>Exercise 1: Evaluating Reliability</a></li>
 <li class="chapter" data-level="" data-path="appendix-answers-to-chapter-exercises.html"><a href="appendix-answers-to-chapter-exercises.html#exercise-2-assessing-validity-1"><i class="fa fa-check"></i>Exercise 2: Assessing Validity</a></li>
@@ -1083,27 +1082,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Make sure your data is organized in a data frame with one column for the outcome variable (high stress vs. low stress) and columns for each predictor (sleep quality, exercise, social support).</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="logistic-regression.html#cb274-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb274-2"><a href="logistic-regression.html#cb274-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb274-3"><a href="logistic-regression.html#cb274-3" tabindex="-1"></a></span>
-<span id="cb274-4"><a href="logistic-regression.html#cb274-4" tabindex="-1"></a><span class="co"># Set seed for reproducibility</span></span>
-<span id="cb274-5"><a href="logistic-regression.html#cb274-5" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb274-6"><a href="logistic-regression.html#cb274-6" tabindex="-1"></a></span>
-<span id="cb274-7"><a href="logistic-regression.html#cb274-7" tabindex="-1"></a><span class="co"># Large sample size</span></span>
-<span id="cb274-8"><a href="logistic-regression.html#cb274-8" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
-<span id="cb274-9"><a href="logistic-regression.html#cb274-9" tabindex="-1"></a></span>
-<span id="cb274-10"><a href="logistic-regression.html#cb274-10" tabindex="-1"></a><span class="co"># Generate predictors with moderate variability</span></span>
-<span id="cb274-11"><a href="logistic-regression.html#cb274-11" tabindex="-1"></a>Sleep_Quality <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">6</span>, <span class="at">sd =</span> <span class="dv">1</span>)  <span class="co"># Moderate variability</span></span>
-<span id="cb274-12"><a href="logistic-regression.html#cb274-12" tabindex="-1"></a>Exercise <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">40</span>, <span class="at">sd =</span> <span class="dv">8</span>)      <span class="co"># Moderate variability</span></span>
-<span id="cb274-13"><a href="logistic-regression.html#cb274-13" tabindex="-1"></a>Social_Support <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">3</span>, <span class="at">sd =</span> <span class="fl">0.8</span>) <span class="co"># Moderate variability</span></span>
-<span id="cb274-14"><a href="logistic-regression.html#cb274-14" tabindex="-1"></a></span>
-<span id="cb274-15"><a href="logistic-regression.html#cb274-15" tabindex="-1"></a><span class="co"># Generate a binary outcome with moderate effect sizes to avoid perfect separation</span></span>
-<span id="cb274-16"><a href="logistic-regression.html#cb274-16" tabindex="-1"></a>High_Stress <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fu">plogis</span>(<span class="sc">-</span><span class="dv">1</span> <span class="sc">+</span> <span class="fl">0.3</span> <span class="sc">*</span> Sleep_Quality <span class="sc">-</span> <span class="fl">0.2</span> <span class="sc">*</span> Exercise <span class="sc">-</span> <span class="fl">0.4</span> <span class="sc">*</span> Social_Support))</span>
-<span id="cb274-17"><a href="logistic-regression.html#cb274-17" tabindex="-1"></a></span>
-<span id="cb274-18"><a href="logistic-regression.html#cb274-18" tabindex="-1"></a><span class="co"># Create the data frame</span></span>
-<span id="cb274-19"><a href="logistic-regression.html#cb274-19" tabindex="-1"></a>stress_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(High_Stress, Sleep_Quality, Exercise, Social_Support)</span>
-<span id="cb274-20"><a href="logistic-regression.html#cb274-20" tabindex="-1"></a></span>
-<span id="cb274-21"><a href="logistic-regression.html#cb274-21" tabindex="-1"></a><span class="fu">head</span>(stress_data)</span></code></pre></div>
+<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="logistic-regression.html#cb275-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb275-2"><a href="logistic-regression.html#cb275-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb275-3"><a href="logistic-regression.html#cb275-3" tabindex="-1"></a></span>
+<span id="cb275-4"><a href="logistic-regression.html#cb275-4" tabindex="-1"></a><span class="co"># Set seed for reproducibility</span></span>
+<span id="cb275-5"><a href="logistic-regression.html#cb275-5" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb275-6"><a href="logistic-regression.html#cb275-6" tabindex="-1"></a></span>
+<span id="cb275-7"><a href="logistic-regression.html#cb275-7" tabindex="-1"></a><span class="co"># Large sample size</span></span>
+<span id="cb275-8"><a href="logistic-regression.html#cb275-8" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
+<span id="cb275-9"><a href="logistic-regression.html#cb275-9" tabindex="-1"></a></span>
+<span id="cb275-10"><a href="logistic-regression.html#cb275-10" tabindex="-1"></a><span class="co"># Generate predictors with moderate variability</span></span>
+<span id="cb275-11"><a href="logistic-regression.html#cb275-11" tabindex="-1"></a>Sleep_Quality <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">6</span>, <span class="at">sd =</span> <span class="dv">1</span>)  <span class="co"># Moderate variability</span></span>
+<span id="cb275-12"><a href="logistic-regression.html#cb275-12" tabindex="-1"></a>Exercise <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">40</span>, <span class="at">sd =</span> <span class="dv">8</span>)      <span class="co"># Moderate variability</span></span>
+<span id="cb275-13"><a href="logistic-regression.html#cb275-13" tabindex="-1"></a>Social_Support <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">3</span>, <span class="at">sd =</span> <span class="fl">0.8</span>) <span class="co"># Moderate variability</span></span>
+<span id="cb275-14"><a href="logistic-regression.html#cb275-14" tabindex="-1"></a></span>
+<span id="cb275-15"><a href="logistic-regression.html#cb275-15" tabindex="-1"></a><span class="co"># Generate a binary outcome with moderate effect sizes to avoid perfect separation</span></span>
+<span id="cb275-16"><a href="logistic-regression.html#cb275-16" tabindex="-1"></a>High_Stress <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fu">plogis</span>(<span class="sc">-</span><span class="dv">1</span> <span class="sc">+</span> <span class="fl">0.3</span> <span class="sc">*</span> Sleep_Quality <span class="sc">-</span> <span class="fl">0.2</span> <span class="sc">*</span> Exercise <span class="sc">-</span> <span class="fl">0.4</span> <span class="sc">*</span> Social_Support))</span>
+<span id="cb275-17"><a href="logistic-regression.html#cb275-17" tabindex="-1"></a></span>
+<span id="cb275-18"><a href="logistic-regression.html#cb275-18" tabindex="-1"></a><span class="co"># Create the data frame</span></span>
+<span id="cb275-19"><a href="logistic-regression.html#cb275-19" tabindex="-1"></a>stress_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(High_Stress, Sleep_Quality, Exercise, Social_Support)</span>
+<span id="cb275-20"><a href="logistic-regression.html#cb275-20" tabindex="-1"></a></span>
+<span id="cb275-21"><a href="logistic-regression.html#cb275-21" tabindex="-1"></a><span class="fu">head</span>(stress_data)</span></code></pre></div>
 <pre><code>##   High_Stress Sleep_Quality Exercise Social_Support
 ## 1           0      5.439524 36.04661       4.896580
 ## 2           0      5.769823 49.02075       2.866550
@@ -1117,18 +1116,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Use the <code>glm()</code> function in R, which stands for “generalized linear model.” You’ll specify the family as “binomial” to indicate that you’re dealing with a binary outcome.</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="logistic-regression.html#cb276-1" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
-<span id="cb276-2"><a href="logistic-regression.html#cb276-2" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(High_Stress <span class="sc">~</span> Sleep_Quality <span class="sc">+</span> Exercise <span class="sc">+</span> Social_Support, </span>
-<span id="cb276-3"><a href="logistic-regression.html#cb276-3" tabindex="-1"></a>             <span class="at">data =</span> stress_data, </span>
-<span id="cb276-4"><a href="logistic-regression.html#cb276-4" tabindex="-1"></a>             <span class="at">family =</span> binomial)</span></code></pre></div>
+<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="logistic-regression.html#cb277-1" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
+<span id="cb277-2"><a href="logistic-regression.html#cb277-2" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(High_Stress <span class="sc">~</span> Sleep_Quality <span class="sc">+</span> Exercise <span class="sc">+</span> Social_Support, </span>
+<span id="cb277-3"><a href="logistic-regression.html#cb277-3" tabindex="-1"></a>             <span class="at">data =</span> stress_data, </span>
+<span id="cb277-4"><a href="logistic-regression.html#cb277-4" tabindex="-1"></a>             <span class="at">family =</span> binomial)</span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li><strong>View the Model Output</strong>:
 <ul>
 <li>You can use the <code>summary()</code> function to see the coefficients and other details of the model.</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="logistic-regression.html#cb277-1" tabindex="-1"></a>   <span class="co"># View the model summary</span></span>
-<span id="cb277-2"><a href="logistic-regression.html#cb277-2" tabindex="-1"></a>   <span class="fu">summary</span>(model)</span></code></pre></div>
+<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="logistic-regression.html#cb278-1" tabindex="-1"></a>   <span class="co"># View the model summary</span></span>
+<span id="cb278-2"><a href="logistic-regression.html#cb278-2" tabindex="-1"></a>   <span class="fu">summary</span>(model)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## glm(formula = High_Stress ~ Sleep_Quality + Exercise + Social_Support, 
@@ -1156,8 +1155,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>The output will include the coefficients (<span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(\beta_2\)</span>, etc.). Remember, these coefficients are in log-odds form, which can be tricky to interpret directly. To make them more interpretable, you can exponentiate the coefficients to get odds ratios.</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="logistic-regression.html#cb279-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
-<span id="cb279-2"><a href="logistic-regression.html#cb279-2" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">coef</span>(model))</span></code></pre></div>
+<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="logistic-regression.html#cb280-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
+<span id="cb280-2"><a href="logistic-regression.html#cb280-2" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">coef</span>(model))</span></code></pre></div>
 <pre><code>##    (Intercept)  Sleep_Quality       Exercise Social_Support 
 ##      0.8181961      1.5851999      0.7947917      0.5168911</code></pre>
 <ol start="5" style="list-style-type: decimal">
@@ -1166,10 +1165,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>You can use the model to predict the probability of high stress for individuals with specific values for sleep quality, exercise, and social support.</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="logistic-regression.html#cb281-1" tabindex="-1"></a><span class="co"># Predict the probability of high stress for new data</span></span>
-<span id="cb281-2"><a href="logistic-regression.html#cb281-2" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Sleep_Quality =</span> <span class="dv">6</span>, <span class="at">Exercise =</span> <span class="dv">30</span>, <span class="at">Social_Support =</span> <span class="dv">3</span>)</span>
-<span id="cb281-3"><a href="logistic-regression.html#cb281-3" tabindex="-1"></a>predicted_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> new_data, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
-<span id="cb281-4"><a href="logistic-regression.html#cb281-4" tabindex="-1"></a>predicted_prob</span></code></pre></div>
+<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="logistic-regression.html#cb282-1" tabindex="-1"></a><span class="co"># Predict the probability of high stress for new data</span></span>
+<span id="cb282-2"><a href="logistic-regression.html#cb282-2" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Sleep_Quality =</span> <span class="dv">6</span>, <span class="at">Exercise =</span> <span class="dv">30</span>, <span class="at">Social_Support =</span> <span class="dv">3</span>)</span>
+<span id="cb282-3"><a href="logistic-regression.html#cb282-3" tabindex="-1"></a>predicted_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> new_data, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
+<span id="cb282-4"><a href="logistic-regression.html#cb282-4" tabindex="-1"></a>predicted_prob</span></code></pre></div>
 <pre><code>##           1 
 ## 0.001821238</code></pre>
 <ol start="6" style="list-style-type: decimal">
@@ -1178,17 +1177,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Visualization can help you better understand the relationship between predictors and the outcome. Now, let’s create a visualization of the relationship between one of the predictors (e.g., Sleep Quality) and the predicted probability of high stress.</li>
 </ul></li>
 </ol>
-<div class="sourceCode" id="cb283"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb283-1"><a href="logistic-regression.html#cb283-1" tabindex="-1"></a><span class="co"># Adding predicted probabilities to the data</span></span>
-<span id="cb283-2"><a href="logistic-regression.html#cb283-2" tabindex="-1"></a>stress_data<span class="sc">$</span>Predicted_Prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
-<span id="cb283-3"><a href="logistic-regression.html#cb283-3" tabindex="-1"></a></span>
-<span id="cb283-4"><a href="logistic-regression.html#cb283-4" tabindex="-1"></a><span class="co"># Plotting the predicted probabilities</span></span>
-<span id="cb283-5"><a href="logistic-regression.html#cb283-5" tabindex="-1"></a><span class="fu">ggplot</span>(stress_data, <span class="fu">aes</span>(<span class="at">x =</span> Exercise, <span class="at">y =</span> Predicted_Prob)) <span class="sc">+</span></span>
-<span id="cb283-6"><a href="logistic-regression.html#cb283-6" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.1</span>, <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
-<span id="cb283-7"><a href="logistic-regression.html#cb283-7" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;glm&quot;</span>, <span class="at">method.args =</span> <span class="fu">list</span>(<span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>), <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
-<span id="cb283-8"><a href="logistic-regression.html#cb283-8" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Probability of High Stress vs. Exercise&quot;</span>,</span>
-<span id="cb283-9"><a href="logistic-regression.html#cb283-9" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Exercise&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predicted Probability of High Stress&quot;</span>) <span class="sc">+</span></span>
-<span id="cb283-10"><a href="logistic-regression.html#cb283-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
-<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-168-1.png" width="672" /></p>
+<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="logistic-regression.html#cb284-1" tabindex="-1"></a><span class="co"># Adding predicted probabilities to the data</span></span>
+<span id="cb284-2"><a href="logistic-regression.html#cb284-2" tabindex="-1"></a>stress_data<span class="sc">$</span>Predicted_Prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
+<span id="cb284-3"><a href="logistic-regression.html#cb284-3" tabindex="-1"></a></span>
+<span id="cb284-4"><a href="logistic-regression.html#cb284-4" tabindex="-1"></a><span class="co"># Plotting the predicted probabilities</span></span>
+<span id="cb284-5"><a href="logistic-regression.html#cb284-5" tabindex="-1"></a><span class="fu">ggplot</span>(stress_data, <span class="fu">aes</span>(<span class="at">x =</span> Exercise, <span class="at">y =</span> Predicted_Prob)) <span class="sc">+</span></span>
+<span id="cb284-6"><a href="logistic-regression.html#cb284-6" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.1</span>, <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb284-7"><a href="logistic-regression.html#cb284-7" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;glm&quot;</span>, <span class="at">method.args =</span> <span class="fu">list</span>(<span class="at">family =</span> <span class="st">&quot;binomial&quot;</span>), <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
+<span id="cb284-8"><a href="logistic-regression.html#cb284-8" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Probability of High Stress vs. Exercise&quot;</span>,</span>
+<span id="cb284-9"><a href="logistic-regression.html#cb284-9" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Exercise&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predicted Probability of High Stress&quot;</span>) <span class="sc">+</span></span>
+<span id="cb284-10"><a href="logistic-regression.html#cb284-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-167-1.png" width="672" /></p>
 <p><strong>Explanation:</strong></p>
 <p>- <strong>Predicted Probabilities</strong>: The <code>Predicted_Prob</code> column contains the probabilities predicted by the logistic regression model.</p>
 <p>- <strong>Visualization</strong>: The plot shows a clear relationship between Exercise and the probability of High Stress. The points represent individual data points, and the red line shows the logistic regression curve.</p>
@@ -1221,8 +1220,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>To interpret these coefficients as odds ratios, you exponentiate them using the <code>exp()</code> function in R.</li>
 </ol>
 <p>Example:</p>
-<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="logistic-regression.html#cb284-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
-<span id="cb284-2"><a href="logistic-regression.html#cb284-2" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">coef</span>(model))</span></code></pre></div>
+<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="logistic-regression.html#cb285-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
+<span id="cb285-2"><a href="logistic-regression.html#cb285-2" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">coef</span>(model))</span></code></pre></div>
 </div>
 <div id="interpreting-the-exponentiated-coefficients" class="section level4 hasAnchor" number="13.3.1.4">
 <h4><span class="header-section-number">13.3.1.4</span> Interpreting the Exponentiated Coefficients:<a href="logistic-regression.html#interpreting-the-exponentiated-coefficients" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1291,81 +1290,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="step-1-loading-and-preparing-the-titanic-dataset" class="section level3 hasAnchor" number="13.4.1">
 <h3><span class="header-section-number">13.4.1</span> Step 1: Loading and Preparing the Titanic Dataset<a href="logistic-regression.html#step-1-loading-and-preparing-the-titanic-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>First, we’ll load the Titanic dataset and prepare it for logistic regression analysis. We’ll create a binary variable <code>Child</code> that indicates whether a passenger is a child (under 18 years old) or an adult.</p>
-<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="logistic-regression.html#cb285-1" tabindex="-1"></a><span class="co"># Load the Titanic dataset from the titanic package</span></span>
-<span id="cb285-2"><a href="logistic-regression.html#cb285-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(titanic)){<span class="fu">install.packages</span>(<span class="st">&quot;titanic&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span>
-<span id="cb285-3"><a href="logistic-regression.html#cb285-3" tabindex="-1"></a><span class="fu">library</span>(titanic)</span>
-<span id="cb285-4"><a href="logistic-regression.html#cb285-4" tabindex="-1"></a></span>
-<span id="cb285-5"><a href="logistic-regression.html#cb285-5" tabindex="-1"></a><span class="co"># Convert the Titanic dataset to a data frame</span></span>
-<span id="cb285-6"><a href="logistic-regression.html#cb285-6" tabindex="-1"></a>titanic_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(titanic<span class="sc">::</span>titanic_train) <span class="sc">%&gt;%</span></span>
-<span id="cb285-7"><a href="logistic-regression.html#cb285-7" tabindex="-1"></a>  <span class="fu">select</span>(Age, Survived, Sex, Pclass) <span class="sc">%&gt;%</span></span>
-<span id="cb285-8"><a href="logistic-regression.html#cb285-8" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
-<span id="cb285-9"><a href="logistic-regression.html#cb285-9" tabindex="-1"></a></span>
-<span id="cb285-10"><a href="logistic-regression.html#cb285-10" tabindex="-1"></a><span class="co"># Create a binary variable for Child (1 if Age &lt; 18, 0 otherwise)</span></span>
-<span id="cb285-11"><a href="logistic-regression.html#cb285-11" tabindex="-1"></a>titanic_df<span class="sc">$</span>Child <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(titanic_df<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">18</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb285-12"><a href="logistic-regression.html#cb285-12" tabindex="-1"></a></span>
-<span id="cb285-13"><a href="logistic-regression.html#cb285-13" tabindex="-1"></a><span class="co"># Create a binary variable for Pclass (0 for 1st, otherwise if 2nd/3RD, then 1 )</span></span>
-<span id="cb285-14"><a href="logistic-regression.html#cb285-14" tabindex="-1"></a>titanic_df<span class="sc">$</span>Child <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(titanic_df<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb285-15"><a href="logistic-regression.html#cb285-15" tabindex="-1"></a></span>
-<span id="cb285-16"><a href="logistic-regression.html#cb285-16" tabindex="-1"></a><span class="co"># Convert Sex to numeric for the model</span></span>
-<span id="cb285-17"><a href="logistic-regression.html#cb285-17" tabindex="-1"></a>titanic_df<span class="sc">$</span>Sex <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.factor</span>(titanic_df<span class="sc">$</span>Sex)) <span class="sc">-</span> <span class="dv">1</span>  <span class="co"># 0 = female, 1 = male</span></span>
-<span id="cb285-18"><a href="logistic-regression.html#cb285-18" tabindex="-1"></a></span>
-<span id="cb285-19"><a href="logistic-regression.html#cb285-19" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
-<span id="cb285-20"><a href="logistic-regression.html#cb285-20" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(Survived <span class="sc">~</span> Sex <span class="sc">+</span> Child <span class="sc">+</span> Pclass, </span>
-<span id="cb285-21"><a href="logistic-regression.html#cb285-21" tabindex="-1"></a>             <span class="at">data =</span> titanic_df, </span>
-<span id="cb285-22"><a href="logistic-regression.html#cb285-22" tabindex="-1"></a>             <span class="at">family =</span> binomial)</span></code></pre></div>
+<div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb286-1"><a href="logistic-regression.html#cb286-1" tabindex="-1"></a><span class="co"># Load the Titanic dataset from the titanic package</span></span>
+<span id="cb286-2"><a href="logistic-regression.html#cb286-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(titanic)){<span class="fu">install.packages</span>(<span class="st">&quot;titanic&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span>
+<span id="cb286-3"><a href="logistic-regression.html#cb286-3" tabindex="-1"></a><span class="fu">library</span>(titanic)</span>
+<span id="cb286-4"><a href="logistic-regression.html#cb286-4" tabindex="-1"></a></span>
+<span id="cb286-5"><a href="logistic-regression.html#cb286-5" tabindex="-1"></a><span class="co"># Convert the Titanic dataset to a data frame</span></span>
+<span id="cb286-6"><a href="logistic-regression.html#cb286-6" tabindex="-1"></a>titanic_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(titanic<span class="sc">::</span>titanic_train) <span class="sc">%&gt;%</span></span>
+<span id="cb286-7"><a href="logistic-regression.html#cb286-7" tabindex="-1"></a>  <span class="fu">select</span>(Age, Survived, Sex, Pclass) <span class="sc">%&gt;%</span></span>
+<span id="cb286-8"><a href="logistic-regression.html#cb286-8" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb286-9"><a href="logistic-regression.html#cb286-9" tabindex="-1"></a></span>
+<span id="cb286-10"><a href="logistic-regression.html#cb286-10" tabindex="-1"></a><span class="co"># Create a binary variable for Child (1 if Age &lt; 18, 0 otherwise)</span></span>
+<span id="cb286-11"><a href="logistic-regression.html#cb286-11" tabindex="-1"></a>titanic_df<span class="sc">$</span>Child <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(titanic_df<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">18</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb286-12"><a href="logistic-regression.html#cb286-12" tabindex="-1"></a></span>
+<span id="cb286-13"><a href="logistic-regression.html#cb286-13" tabindex="-1"></a><span class="co"># Create a binary variable for Pclass (0 for 1st, otherwise if 2nd/3RD, then 1 )</span></span>
+<span id="cb286-14"><a href="logistic-regression.html#cb286-14" tabindex="-1"></a>titanic_df<span class="sc">$</span>Pclass <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(titanic_df<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb286-15"><a href="logistic-regression.html#cb286-15" tabindex="-1"></a></span>
+<span id="cb286-16"><a href="logistic-regression.html#cb286-16" tabindex="-1"></a><span class="co"># Convert Sex to numeric for the model</span></span>
+<span id="cb286-17"><a href="logistic-regression.html#cb286-17" tabindex="-1"></a>titanic_df<span class="sc">$</span>Sex <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.factor</span>(titanic_df<span class="sc">$</span>Sex)) <span class="sc">-</span> <span class="dv">1</span>  <span class="co"># 0 = female, 1 = male</span></span>
+<span id="cb286-18"><a href="logistic-regression.html#cb286-18" tabindex="-1"></a></span>
+<span id="cb286-19"><a href="logistic-regression.html#cb286-19" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
+<span id="cb286-20"><a href="logistic-regression.html#cb286-20" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(Survived <span class="sc">~</span> Sex <span class="sc">+</span> Child <span class="sc">+</span> Pclass, </span>
+<span id="cb286-21"><a href="logistic-regression.html#cb286-21" tabindex="-1"></a>             <span class="at">data =</span> titanic_df, </span>
+<span id="cb286-22"><a href="logistic-regression.html#cb286-22" tabindex="-1"></a>             <span class="at">family =</span> binomial)</span></code></pre></div>
 </div>
 <div id="step-2-calculating-the-odds-ratios" class="section level3 hasAnchor" number="13.4.2">
 <h3><span class="header-section-number">13.4.2</span> Step 2: Calculating the Odds Ratios<a href="logistic-regression.html#step-2-calculating-the-odds-ratios" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Next, we’ll calculate the odds ratios for each predictor by exponentiating the model coefficients. We’ll also calculate the confidence intervals for these odds ratios.</p>
-<div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb286-1"><a href="logistic-regression.html#cb286-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
-<span id="cb286-2"><a href="logistic-regression.html#cb286-2" tabindex="-1"></a>odds_ratios <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">coef</span>(model))</span>
-<span id="cb286-3"><a href="logistic-regression.html#cb286-3" tabindex="-1"></a></span>
-<span id="cb286-4"><a href="logistic-regression.html#cb286-4" tabindex="-1"></a><span class="co"># Calculate confidence intervals for odds ratios</span></span>
-<span id="cb286-5"><a href="logistic-regression.html#cb286-5" tabindex="-1"></a>conf_int <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">confint</span>(model))</span></code></pre></div>
+<div class="sourceCode" id="cb287"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb287-1"><a href="logistic-regression.html#cb287-1" tabindex="-1"></a><span class="co"># Exponentiate the coefficients to get odds ratios</span></span>
+<span id="cb287-2"><a href="logistic-regression.html#cb287-2" tabindex="-1"></a>odds_ratios <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">coef</span>(model))</span>
+<span id="cb287-3"><a href="logistic-regression.html#cb287-3" tabindex="-1"></a></span>
+<span id="cb287-4"><a href="logistic-regression.html#cb287-4" tabindex="-1"></a><span class="co"># Calculate confidence intervals for odds ratios</span></span>
+<span id="cb287-5"><a href="logistic-regression.html#cb287-5" tabindex="-1"></a>conf_int <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">confint</span>(model))</span></code></pre></div>
 <pre><code>## Waiting for profiling to be done...</code></pre>
-<div class="sourceCode" id="cb288"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb288-1"><a href="logistic-regression.html#cb288-1" tabindex="-1"></a><span class="co"># Combine odds ratios and confidence intervals into a data frame</span></span>
-<span id="cb288-2"><a href="logistic-regression.html#cb288-2" tabindex="-1"></a>odds_ratios_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb288-3"><a href="logistic-regression.html#cb288-3" tabindex="-1"></a>  <span class="at">Predictor =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>, <span class="st">&quot;Male (vs. Female)&quot;</span>, <span class="st">&quot;Child (vs. Adult)&quot;</span>, <span class="st">&quot;2nd/3rd Class (vs 1st&quot;</span>),</span>
-<span id="cb288-4"><a href="logistic-regression.html#cb288-4" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> odds_ratios,</span>
-<span id="cb288-5"><a href="logistic-regression.html#cb288-5" tabindex="-1"></a>  <span class="at">Lower_CI =</span> conf_int[, <span class="dv">1</span>],</span>
-<span id="cb288-6"><a href="logistic-regression.html#cb288-6" tabindex="-1"></a>  <span class="at">Upper_CI =</span> conf_int[, <span class="dv">2</span>]</span>
-<span id="cb288-7"><a href="logistic-regression.html#cb288-7" tabindex="-1"></a>)</span>
-<span id="cb288-8"><a href="logistic-regression.html#cb288-8" tabindex="-1"></a></span>
-<span id="cb288-9"><a href="logistic-regression.html#cb288-9" tabindex="-1"></a>odds_ratios_df</span></code></pre></div>
-<pre><code>##                         Predictor  Odds_Ratio    Lower_CI   Upper_CI
-## (Intercept)             Intercept 29.44309004 15.17017433 59.4409578
-## Sex             Male (vs. Female)  0.07637175  0.05080861  0.1128107
-## Child           Child (vs. Adult)  1.13034158  0.48130489  2.6373722
-## Pclass      2nd/3rd Class (vs 1st  0.35041381  0.21982094  0.5549680</code></pre>
+<div class="sourceCode" id="cb289"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb289-1"><a href="logistic-regression.html#cb289-1" tabindex="-1"></a><span class="co"># Combine odds ratios and confidence intervals into a data frame</span></span>
+<span id="cb289-2"><a href="logistic-regression.html#cb289-2" tabindex="-1"></a>odds_ratios_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb289-3"><a href="logistic-regression.html#cb289-3" tabindex="-1"></a>  <span class="at">Predictor =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>, <span class="st">&quot;Male (vs. Female)&quot;</span>, <span class="st">&quot;Child (vs. Adult)&quot;</span>, <span class="st">&quot;2nd/3rd Class (vs 1st&quot;</span>),</span>
+<span id="cb289-4"><a href="logistic-regression.html#cb289-4" tabindex="-1"></a>  <span class="at">Odds_Ratio =</span> odds_ratios,</span>
+<span id="cb289-5"><a href="logistic-regression.html#cb289-5" tabindex="-1"></a>  <span class="at">Lower_CI =</span> conf_int[, <span class="dv">1</span>],</span>
+<span id="cb289-6"><a href="logistic-regression.html#cb289-6" tabindex="-1"></a>  <span class="at">Upper_CI =</span> conf_int[, <span class="dv">2</span>]</span>
+<span id="cb289-7"><a href="logistic-regression.html#cb289-7" tabindex="-1"></a>)</span>
+<span id="cb289-8"><a href="logistic-regression.html#cb289-8" tabindex="-1"></a></span>
+<span id="cb289-9"><a href="logistic-regression.html#cb289-9" tabindex="-1"></a>odds_ratios_df</span></code></pre></div>
+<pre><code>##                         Predictor Odds_Ratio   Lower_CI   Upper_CI
+## (Intercept)             Intercept 9.75145012 6.19847936 15.7288986
+## Sex             Male (vs. Female) 0.07807518 0.05226056  0.1147708
+## Child           Child (vs. Adult) 2.35372358 1.41282077  3.9381978
+## Pclass      2nd/3rd Class (vs 1st 0.17748184 0.11386980  0.2729247</code></pre>
 </div>
 <div id="step-3-creating-a-dot-plot" class="section level3 hasAnchor" number="13.4.3">
 <h3><span class="header-section-number">13.4.3</span> Step 3: Creating a Dot Plot<a href="logistic-regression.html#step-3-creating-a-dot-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can use a dot plot to visualize the odds ratios and their confidence intervals. This helps to easily compare the impact of different predictors on survival.</p>
-<div class="sourceCode" id="cb290"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb290-1"><a href="logistic-regression.html#cb290-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb290-2"><a href="logistic-regression.html#cb290-2" tabindex="-1"></a></span>
-<span id="cb290-3"><a href="logistic-regression.html#cb290-3" tabindex="-1"></a><span class="co"># Plotting the odds ratios with confidence intervals</span></span>
-<span id="cb290-4"><a href="logistic-regression.html#cb290-4" tabindex="-1"></a><span class="fu">ggplot</span>(odds_ratios_df[<span class="sc">-</span><span class="dv">1</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Odds_Ratio, <span class="at">y =</span> Predictor)) <span class="sc">+</span>  <span class="co"># Exclude the intercept for clarity</span></span>
-<span id="cb290-5"><a href="logistic-regression.html#cb290-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
-<span id="cb290-6"><a href="logistic-regression.html#cb290-6" tabindex="-1"></a>  <span class="fu">geom_errorbarh</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> Lower_CI, <span class="at">xmax =</span> Upper_CI), <span class="at">height =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">&quot;darkgray&quot;</span>) <span class="sc">+</span></span>
-<span id="cb290-7"><a href="logistic-regression.html#cb290-7" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
-<span id="cb290-8"><a href="logistic-regression.html#cb290-8" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Odds Ratios for Predictors of Survival on the Titanic&quot;</span>,</span>
-<span id="cb290-9"><a href="logistic-regression.html#cb290-9" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Odds Ratio&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predictor&quot;</span>) <span class="sc">+</span></span>
-<span id="cb290-10"><a href="logistic-regression.html#cb290-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
-<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-171-1.png" width="672" /></p>
+<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="logistic-regression.html#cb291-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb291-2"><a href="logistic-regression.html#cb291-2" tabindex="-1"></a></span>
+<span id="cb291-3"><a href="logistic-regression.html#cb291-3" tabindex="-1"></a><span class="co"># Plotting the odds ratios with confidence intervals</span></span>
+<span id="cb291-4"><a href="logistic-regression.html#cb291-4" tabindex="-1"></a><span class="fu">ggplot</span>(odds_ratios_df[<span class="sc">-</span><span class="dv">1</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Odds_Ratio, <span class="at">y =</span> Predictor)) <span class="sc">+</span>  <span class="co"># Exclude the intercept for clarity</span></span>
+<span id="cb291-5"><a href="logistic-regression.html#cb291-5" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb291-6"><a href="logistic-regression.html#cb291-6" tabindex="-1"></a>  <span class="fu">geom_errorbarh</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> Lower_CI, <span class="at">xmax =</span> Upper_CI), <span class="at">height =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">&quot;darkgray&quot;</span>) <span class="sc">+</span></span>
+<span id="cb291-7"><a href="logistic-regression.html#cb291-7" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
+<span id="cb291-8"><a href="logistic-regression.html#cb291-8" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Odds Ratios for Predictors of Survival on the Titanic&quot;</span>,</span>
+<span id="cb291-9"><a href="logistic-regression.html#cb291-9" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Odds Ratio&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predictor&quot;</span>) <span class="sc">+</span></span>
+<span id="cb291-10"><a href="logistic-regression.html#cb291-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-170-1.png" width="672" /></p>
 </div>
 <div id="step-4-creating-a-bar-graph" class="section level3 hasAnchor" number="13.4.4">
 <h3><span class="header-section-number">13.4.4</span> Step 4: Creating a Bar Graph<a href="logistic-regression.html#step-4-creating-a-bar-graph" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Alternatively, we can visualize the odds ratios using a bar graph. This graph represents the magnitude of each odds ratio as the length of the bars.</p>
-<div class="sourceCode" id="cb291"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb291-1"><a href="logistic-regression.html#cb291-1" tabindex="-1"></a><span class="co"># Plotting the odds ratios using a bar graph</span></span>
-<span id="cb291-2"><a href="logistic-regression.html#cb291-2" tabindex="-1"></a><span class="fu">ggplot</span>(odds_ratios_df[<span class="sc">-</span><span class="dv">1</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Predictor, <span class="at">y =</span> Odds_Ratio)) <span class="sc">+</span>  <span class="co"># Exclude the intercept for clarity</span></span>
-<span id="cb291-3"><a href="logistic-regression.html#cb291-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;lightblue&quot;</span>) <span class="sc">+</span></span>
-<span id="cb291-4"><a href="logistic-regression.html#cb291-4" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> Lower_CI, <span class="at">ymax =</span> Upper_CI), <span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">&quot;darkgray&quot;</span>) <span class="sc">+</span></span>
-<span id="cb291-5"><a href="logistic-regression.html#cb291-5" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
-<span id="cb291-6"><a href="logistic-regression.html#cb291-6" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Odds Ratios for Predictors of Survival on the Titanic&quot;</span>,</span>
-<span id="cb291-7"><a href="logistic-regression.html#cb291-7" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Predictor&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Odds Ratio&quot;</span>) <span class="sc">+</span></span>
-<span id="cb291-8"><a href="logistic-regression.html#cb291-8" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span>  <span class="co"># Flips the axes to make it easier to read</span></span>
-<span id="cb291-9"><a href="logistic-regression.html#cb291-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
-<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-172-1.png" width="672" /></p>
+<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="logistic-regression.html#cb292-1" tabindex="-1"></a><span class="co"># Plotting the odds ratios using a bar graph</span></span>
+<span id="cb292-2"><a href="logistic-regression.html#cb292-2" tabindex="-1"></a><span class="fu">ggplot</span>(odds_ratios_df[<span class="sc">-</span><span class="dv">1</span>, ], <span class="fu">aes</span>(<span class="at">x =</span> Predictor, <span class="at">y =</span> Odds_Ratio)) <span class="sc">+</span>  <span class="co"># Exclude the intercept for clarity</span></span>
+<span id="cb292-3"><a href="logistic-regression.html#cb292-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;lightblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb292-4"><a href="logistic-regression.html#cb292-4" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> Lower_CI, <span class="at">ymax =</span> Upper_CI), <span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">color =</span> <span class="st">&quot;darkgray&quot;</span>) <span class="sc">+</span></span>
+<span id="cb292-5"><a href="logistic-regression.html#cb292-5" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">&quot;dashed&quot;</span>, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) <span class="sc">+</span></span>
+<span id="cb292-6"><a href="logistic-regression.html#cb292-6" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Odds Ratios for Predictors of Survival on the Titanic&quot;</span>,</span>
+<span id="cb292-7"><a href="logistic-regression.html#cb292-7" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Predictor&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Odds Ratio&quot;</span>) <span class="sc">+</span></span>
+<span id="cb292-8"><a href="logistic-regression.html#cb292-8" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span>  <span class="co"># Flips the axes to make it easier to read</span></span>
+<span id="cb292-9"><a href="logistic-regression.html#cb292-9" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div>
+<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-171-1.png" width="672" /></p>
 </div>
 <div id="interpreting-the-graphs" class="section level3 hasAnchor" number="13.4.5">
 <h3><span class="header-section-number">13.4.5</span> Interpreting the Graphs<a href="logistic-regression.html#interpreting-the-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1499,41 +1498,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>p-value &lt; 0.05</strong>: If the p-value is less than 0.05, it suggests that the model may not fit the data well.</li>
 </ul>
 <p><strong>Example in R</strong>:</p>
-<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="logistic-regression.html#cb292-1" tabindex="-1"></a><span class="co"># Install and load the necessary package</span></span>
-<span id="cb292-2"><a href="logistic-regression.html#cb292-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(ResourceSelection)){<span class="fu">install.packages</span>(<span class="st">&quot;ResourceSelection&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span></code></pre></div>
+<div class="sourceCode" id="cb293"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb293-1"><a href="logistic-regression.html#cb293-1" tabindex="-1"></a><span class="co"># Install and load the necessary package</span></span>
+<span id="cb293-2"><a href="logistic-regression.html#cb293-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(ResourceSelection)){<span class="fu">install.packages</span>(<span class="st">&quot;ResourceSelection&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span></code></pre></div>
 <pre><code>## Loading required package: ResourceSelection</code></pre>
-<pre><code>## Warning: package &#39;ResourceSelection&#39; was built under R version 4.3.3</code></pre>
+<pre><code>## Warning: package &#39;ResourceSelection&#39; was built under R version 4.4.3</code></pre>
 <pre><code>## ResourceSelection 0.3-6   2023-06-27</code></pre>
-<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="logistic-regression.html#cb296-1" tabindex="-1"></a><span class="fu">library</span>(ResourceSelection)</span>
-<span id="cb296-2"><a href="logistic-regression.html#cb296-2" tabindex="-1"></a></span>
-<span id="cb296-3"><a href="logistic-regression.html#cb296-3" tabindex="-1"></a><span class="co"># Creating a new version of the dataset</span></span>
-<span id="cb296-4"><a href="logistic-regression.html#cb296-4" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb296-5"><a href="logistic-regression.html#cb296-5" tabindex="-1"></a>titanic_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb296-6"><a href="logistic-regression.html#cb296-6" tabindex="-1"></a>  <span class="at">Survived =</span> <span class="fu">rbinom</span>(<span class="dv">1000</span>, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
-<span id="cb296-7"><a href="logistic-regression.html#cb296-7" tabindex="-1"></a>  <span class="at">Sex =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>), <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)),</span>
-<span id="cb296-8"><a href="logistic-regression.html#cb296-8" tabindex="-1"></a>  <span class="at">Age =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">95</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Age range from 0 to 95</span></span>
-<span id="cb296-9"><a href="logistic-regression.html#cb296-9" tabindex="-1"></a>  <span class="at">Pclass =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;3&quot;</span>))</span>
-<span id="cb296-10"><a href="logistic-regression.html#cb296-10" tabindex="-1"></a>)</span>
-<span id="cb296-11"><a href="logistic-regression.html#cb296-11" tabindex="-1"></a></span>
-<span id="cb296-12"><a href="logistic-regression.html#cb296-12" tabindex="-1"></a><span class="co"># Adjust the dataset to create significant relationships</span></span>
-<span id="cb296-13"><a href="logistic-regression.html#cb296-13" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
-<span id="cb296-14"><a href="logistic-regression.html#cb296-14" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.8</span>)</span>
-<span id="cb296-15"><a href="logistic-regression.html#cb296-15" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.2</span>)</span>
-<span id="cb296-16"><a href="logistic-regression.html#cb296-16" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">40</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">40</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.3</span>)</span>
-<span id="cb296-17"><a href="logistic-regression.html#cb296-17" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">40</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">40</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
-<span id="cb296-18"><a href="logistic-regression.html#cb296-18" tabindex="-1"></a></span>
-<span id="cb296-19"><a href="logistic-regression.html#cb296-19" tabindex="-1"></a><span class="co"># Ensure Pclass has &quot;1&quot; as the reference level</span></span>
-<span id="cb296-20"><a href="logistic-regression.html#cb296-20" tabindex="-1"></a>titanic_data<span class="sc">$</span>Pclass <span class="ot">&lt;-</span> <span class="fu">relevel</span>(titanic_data<span class="sc">$</span>Pclass, <span class="at">ref =</span> <span class="st">&quot;1&quot;</span>)</span>
-<span id="cb296-21"><a href="logistic-regression.html#cb296-21" tabindex="-1"></a></span>
-<span id="cb296-22"><a href="logistic-regression.html#cb296-22" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
-<span id="cb296-23"><a href="logistic-regression.html#cb296-23" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(Survived <span class="sc">~</span> Sex <span class="sc">+</span> Age <span class="sc">+</span> Pclass, <span class="at">data =</span> titanic_data, <span class="at">family =</span> binomial)</span>
-<span id="cb296-24"><a href="logistic-regression.html#cb296-24" tabindex="-1"></a></span>
-<span id="cb296-25"><a href="logistic-regression.html#cb296-25" tabindex="-1"></a><span class="co"># Generate fitted values (predicted probabilities)</span></span>
-<span id="cb296-26"><a href="logistic-regression.html#cb296-26" tabindex="-1"></a>titanic_data<span class="sc">$</span>predicted_prob <span class="ot">&lt;-</span> model<span class="sc">$</span>fitted.values</span>
-<span id="cb296-27"><a href="logistic-regression.html#cb296-27" tabindex="-1"></a></span>
-<span id="cb296-28"><a href="logistic-regression.html#cb296-28" tabindex="-1"></a><span class="co"># Perform the Hosmer-Lemeshow test with default binning</span></span>
-<span id="cb296-29"><a href="logistic-regression.html#cb296-29" tabindex="-1"></a>hoslem_test <span class="ot">&lt;-</span> <span class="fu">hoslem.test</span>(titanic_data<span class="sc">$</span>Survived, model<span class="sc">$</span>fitted.values, <span class="at">g =</span> <span class="dv">10</span>)</span>
-<span id="cb296-30"><a href="logistic-regression.html#cb296-30" tabindex="-1"></a>hoslem_test</span></code></pre></div>
+<div class="sourceCode" id="cb297"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb297-1"><a href="logistic-regression.html#cb297-1" tabindex="-1"></a><span class="fu">library</span>(ResourceSelection)</span>
+<span id="cb297-2"><a href="logistic-regression.html#cb297-2" tabindex="-1"></a></span>
+<span id="cb297-3"><a href="logistic-regression.html#cb297-3" tabindex="-1"></a><span class="co"># Creating a new version of the dataset</span></span>
+<span id="cb297-4"><a href="logistic-regression.html#cb297-4" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb297-5"><a href="logistic-regression.html#cb297-5" tabindex="-1"></a>titanic_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb297-6"><a href="logistic-regression.html#cb297-6" tabindex="-1"></a>  <span class="at">Survived =</span> <span class="fu">rbinom</span>(<span class="dv">1000</span>, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
+<span id="cb297-7"><a href="logistic-regression.html#cb297-7" tabindex="-1"></a>  <span class="at">Sex =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>), <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb297-8"><a href="logistic-regression.html#cb297-8" tabindex="-1"></a>  <span class="at">Age =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">95</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Age range from 0 to 95</span></span>
+<span id="cb297-9"><a href="logistic-regression.html#cb297-9" tabindex="-1"></a>  <span class="at">Pclass =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;3&quot;</span>))</span>
+<span id="cb297-10"><a href="logistic-regression.html#cb297-10" tabindex="-1"></a>)</span>
+<span id="cb297-11"><a href="logistic-regression.html#cb297-11" tabindex="-1"></a></span>
+<span id="cb297-12"><a href="logistic-regression.html#cb297-12" tabindex="-1"></a><span class="co"># Adjust the dataset to create significant relationships</span></span>
+<span id="cb297-13"><a href="logistic-regression.html#cb297-13" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
+<span id="cb297-14"><a href="logistic-regression.html#cb297-14" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.8</span>)</span>
+<span id="cb297-15"><a href="logistic-regression.html#cb297-15" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.2</span>)</span>
+<span id="cb297-16"><a href="logistic-regression.html#cb297-16" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">40</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">40</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.3</span>)</span>
+<span id="cb297-17"><a href="logistic-regression.html#cb297-17" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">40</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">40</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
+<span id="cb297-18"><a href="logistic-regression.html#cb297-18" tabindex="-1"></a></span>
+<span id="cb297-19"><a href="logistic-regression.html#cb297-19" tabindex="-1"></a><span class="co"># Ensure Pclass has &quot;1&quot; as the reference level</span></span>
+<span id="cb297-20"><a href="logistic-regression.html#cb297-20" tabindex="-1"></a>titanic_data<span class="sc">$</span>Pclass <span class="ot">&lt;-</span> <span class="fu">relevel</span>(titanic_data<span class="sc">$</span>Pclass, <span class="at">ref =</span> <span class="st">&quot;1&quot;</span>)</span>
+<span id="cb297-21"><a href="logistic-regression.html#cb297-21" tabindex="-1"></a></span>
+<span id="cb297-22"><a href="logistic-regression.html#cb297-22" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
+<span id="cb297-23"><a href="logistic-regression.html#cb297-23" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">glm</span>(Survived <span class="sc">~</span> Sex <span class="sc">+</span> Age <span class="sc">+</span> Pclass, <span class="at">data =</span> titanic_data, <span class="at">family =</span> binomial)</span>
+<span id="cb297-24"><a href="logistic-regression.html#cb297-24" tabindex="-1"></a></span>
+<span id="cb297-25"><a href="logistic-regression.html#cb297-25" tabindex="-1"></a><span class="co"># Generate fitted values (predicted probabilities)</span></span>
+<span id="cb297-26"><a href="logistic-regression.html#cb297-26" tabindex="-1"></a>titanic_data<span class="sc">$</span>predicted_prob <span class="ot">&lt;-</span> model<span class="sc">$</span>fitted.values</span>
+<span id="cb297-27"><a href="logistic-regression.html#cb297-27" tabindex="-1"></a></span>
+<span id="cb297-28"><a href="logistic-regression.html#cb297-28" tabindex="-1"></a><span class="co"># Perform the Hosmer-Lemeshow test with default binning</span></span>
+<span id="cb297-29"><a href="logistic-regression.html#cb297-29" tabindex="-1"></a>hoslem_test <span class="ot">&lt;-</span> <span class="fu">hoslem.test</span>(titanic_data<span class="sc">$</span>Survived, model<span class="sc">$</span>fitted.values, <span class="at">g =</span> <span class="dv">10</span>)</span>
+<span id="cb297-30"><a href="logistic-regression.html#cb297-30" tabindex="-1"></a>hoslem_test</span></code></pre></div>
 <pre><code>## 
 ##  Hosmer and Lemeshow goodness of fit (GOF) test
 ## 
@@ -1563,18 +1562,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 <p><strong>Example in R</strong>:</p>
-<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="logistic-regression.html#cb298-1" tabindex="-1"></a><span class="co"># Install and load the pROC package for ROC curve analysis</span></span>
-<span id="cb298-2"><a href="logistic-regression.html#cb298-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(pROC)){<span class="fu">install.packages</span>(<span class="st">&quot;pROC&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span>
-<span id="cb298-3"><a href="logistic-regression.html#cb298-3" tabindex="-1"></a><span class="fu">library</span>(pROC)</span>
-<span id="cb298-4"><a href="logistic-regression.html#cb298-4" tabindex="-1"></a></span>
-<span id="cb298-5"><a href="logistic-regression.html#cb298-5" tabindex="-1"></a><span class="co"># Generate the ROC curve</span></span>
-<span id="cb298-6"><a href="logistic-regression.html#cb298-6" tabindex="-1"></a>roc_curve <span class="ot">&lt;-</span> <span class="fu">roc</span>(titanic_data<span class="sc">$</span>Survived, model<span class="sc">$</span>fitted.values)</span>
-<span id="cb298-7"><a href="logistic-regression.html#cb298-7" tabindex="-1"></a></span>
-<span id="cb298-8"><a href="logistic-regression.html#cb298-8" tabindex="-1"></a><span class="co"># Plot the ROC curve</span></span>
-<span id="cb298-9"><a href="logistic-regression.html#cb298-9" tabindex="-1"></a><span class="fu">plot</span>(roc_curve, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="at">main =</span> <span class="st">&quot;ROC Curve for Titanic Survival Model&quot;</span>)</span></code></pre></div>
-<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-174-1.png" width="672" /></p>
-<div class="sourceCode" id="cb299"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb299-1"><a href="logistic-regression.html#cb299-1" tabindex="-1"></a><span class="co"># Display the AUC value</span></span>
-<span id="cb299-2"><a href="logistic-regression.html#cb299-2" tabindex="-1"></a><span class="fu">auc</span>(roc_curve)</span></code></pre></div>
+<div class="sourceCode" id="cb299"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb299-1"><a href="logistic-regression.html#cb299-1" tabindex="-1"></a><span class="co"># Install and load the pROC package for ROC curve analysis</span></span>
+<span id="cb299-2"><a href="logistic-regression.html#cb299-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(pROC)){<span class="fu">install.packages</span>(<span class="st">&quot;pROC&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span>
+<span id="cb299-3"><a href="logistic-regression.html#cb299-3" tabindex="-1"></a><span class="fu">library</span>(pROC)</span>
+<span id="cb299-4"><a href="logistic-regression.html#cb299-4" tabindex="-1"></a></span>
+<span id="cb299-5"><a href="logistic-regression.html#cb299-5" tabindex="-1"></a><span class="co"># Generate the ROC curve</span></span>
+<span id="cb299-6"><a href="logistic-regression.html#cb299-6" tabindex="-1"></a>roc_curve <span class="ot">&lt;-</span> <span class="fu">roc</span>(titanic_data<span class="sc">$</span>Survived, model<span class="sc">$</span>fitted.values)</span>
+<span id="cb299-7"><a href="logistic-regression.html#cb299-7" tabindex="-1"></a></span>
+<span id="cb299-8"><a href="logistic-regression.html#cb299-8" tabindex="-1"></a><span class="co"># Plot the ROC curve</span></span>
+<span id="cb299-9"><a href="logistic-regression.html#cb299-9" tabindex="-1"></a><span class="fu">plot</span>(roc_curve, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="at">main =</span> <span class="st">&quot;ROC Curve for Titanic Survival Model&quot;</span>)</span></code></pre></div>
+<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-173-1.png" width="672" /></p>
+<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="logistic-regression.html#cb300-1" tabindex="-1"></a><span class="co"># Display the AUC value</span></span>
+<span id="cb300-2"><a href="logistic-regression.html#cb300-2" tabindex="-1"></a><span class="fu">auc</span>(roc_curve)</span></code></pre></div>
 <pre><code>## Area under the curve: 0.7136</code></pre>
 </div>
 <div id="interpreting-the-roc-curve" class="section level5 hasAnchor" number="13.6.2.2.3">
@@ -1599,15 +1598,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul>
 <p><strong>Example in R</strong>:</p>
-<div class="sourceCode" id="cb301"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb301-1"><a href="logistic-regression.html#cb301-1" tabindex="-1"></a><span class="co"># Calculate deviance residuals</span></span>
-<span id="cb301-2"><a href="logistic-regression.html#cb301-2" tabindex="-1"></a>deviance_residuals <span class="ot">&lt;-</span> <span class="fu">residuals</span>(model, <span class="at">type =</span> <span class="st">&quot;deviance&quot;</span>)</span>
-<span id="cb301-3"><a href="logistic-regression.html#cb301-3" tabindex="-1"></a></span>
-<span id="cb301-4"><a href="logistic-regression.html#cb301-4" tabindex="-1"></a><span class="co"># Plot deviance residuals</span></span>
-<span id="cb301-5"><a href="logistic-regression.html#cb301-5" tabindex="-1"></a><span class="fu">plot</span>(model<span class="sc">$</span>fitted.values, deviance_residuals, </span>
-<span id="cb301-6"><a href="logistic-regression.html#cb301-6" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Fitted Values&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Deviance Residuals&quot;</span>,</span>
-<span id="cb301-7"><a href="logistic-regression.html#cb301-7" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Deviance Residuals vs Fitted Values&quot;</span>)</span>
-<span id="cb301-8"><a href="logistic-regression.html#cb301-8" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
-<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-175-1.png" width="672" /></p>
+<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="logistic-regression.html#cb302-1" tabindex="-1"></a><span class="co"># Calculate deviance residuals</span></span>
+<span id="cb302-2"><a href="logistic-regression.html#cb302-2" tabindex="-1"></a>deviance_residuals <span class="ot">&lt;-</span> <span class="fu">residuals</span>(model, <span class="at">type =</span> <span class="st">&quot;deviance&quot;</span>)</span>
+<span id="cb302-3"><a href="logistic-regression.html#cb302-3" tabindex="-1"></a></span>
+<span id="cb302-4"><a href="logistic-regression.html#cb302-4" tabindex="-1"></a><span class="co"># Plot deviance residuals</span></span>
+<span id="cb302-5"><a href="logistic-regression.html#cb302-5" tabindex="-1"></a><span class="fu">plot</span>(model<span class="sc">$</span>fitted.values, deviance_residuals, </span>
+<span id="cb302-6"><a href="logistic-regression.html#cb302-6" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Fitted Values&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Deviance Residuals&quot;</span>,</span>
+<span id="cb302-7"><a href="logistic-regression.html#cb302-7" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Deviance Residuals vs Fitted Values&quot;</span>)</span>
+<span id="cb302-8"><a href="logistic-regression.html#cb302-8" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="psych-stats-book_files/figure-html/unnamed-chunk-174-1.png" width="672" /></p>
 </div>
 <div id="multicollinearity" class="section level4 hasAnchor" number="13.6.3.2">
 <h4><span class="header-section-number">13.6.3.2</span> 2. Multicollinearity<a href="logistic-regression.html#multicollinearity" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1616,8 +1615,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Multicollinearity doesn’t necessarily affect model fit but can make it harder to interpret the results.</li>
 </ul>
 <p><strong>Example in R</strong>:</p>
-<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="logistic-regression.html#cb302-1" tabindex="-1"></a><span class="co"># Install and load the car package for VIF calculation</span></span>
-<span id="cb302-2"><a href="logistic-regression.html#cb302-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(car)){<span class="fu">install.packages</span>(<span class="st">&quot;car&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span></code></pre></div>
+<div class="sourceCode" id="cb303"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb303-1"><a href="logistic-regression.html#cb303-1" tabindex="-1"></a><span class="co"># Install and load the car package for VIF calculation</span></span>
+<span id="cb303-2"><a href="logistic-regression.html#cb303-2" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(car)){<span class="fu">install.packages</span>(<span class="st">&quot;car&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)}</span></code></pre></div>
 <pre><code>## Loading required package: car</code></pre>
 <pre><code>## Loading required package: carData</code></pre>
 <pre><code>## 
@@ -1628,10 +1627,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## The following object is masked from &#39;package:psych&#39;:
 ## 
 ##     logit</code></pre>
-<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="logistic-regression.html#cb308-1" tabindex="-1"></a><span class="fu">library</span>(car)</span>
-<span id="cb308-2"><a href="logistic-regression.html#cb308-2" tabindex="-1"></a></span>
-<span id="cb308-3"><a href="logistic-regression.html#cb308-3" tabindex="-1"></a><span class="co"># Calculate VIF for each predictor</span></span>
-<span id="cb308-4"><a href="logistic-regression.html#cb308-4" tabindex="-1"></a><span class="fu">vif</span>(model)</span></code></pre></div>
+<div class="sourceCode" id="cb309"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb309-1"><a href="logistic-regression.html#cb309-1" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb309-2"><a href="logistic-regression.html#cb309-2" tabindex="-1"></a></span>
+<span id="cb309-3"><a href="logistic-regression.html#cb309-3" tabindex="-1"></a><span class="co"># Calculate VIF for each predictor</span></span>
+<span id="cb309-4"><a href="logistic-regression.html#cb309-4" tabindex="-1"></a><span class="fu">vif</span>(model)</span></code></pre></div>
 <pre><code>##            GVIF Df GVIF^(1/(2*Df))
 ## Sex    1.009713  1        1.004845
 ## Age    1.007702  1        1.003844
@@ -1682,34 +1681,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="exercise-1-fitting-a-logistic-regression-model" class="section level3 hasAnchor" number="13.8.1">
 <h3><span class="header-section-number">13.8.1</span> Exercise 1: Fitting a Logistic Regression Model<a href="logistic-regression.html#exercise-1-fitting-a-logistic-regression-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Task</strong>: Using the provided dataset, fit a logistic regression model to predict whether a person survived the Titanic disaster (<code>Survived</code>), based on the predictors <code>Sex</code>, <code>Age</code>, and <code>Pclass</code>. Interpret the exponentiated coefficients (odds ratios) for each predictor.</p>
-<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="logistic-regression.html#cb310-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
-<span id="cb310-2"><a href="logistic-regression.html#cb310-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb310-3"><a href="logistic-regression.html#cb310-3" tabindex="-1"></a></span>
-<span id="cb310-4"><a href="logistic-regression.html#cb310-4" tabindex="-1"></a><span class="co"># Generate a new example dataset with significant effects</span></span>
-<span id="cb310-5"><a href="logistic-regression.html#cb310-5" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb310-6"><a href="logistic-regression.html#cb310-6" tabindex="-1"></a>titanic_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb310-7"><a href="logistic-regression.html#cb310-7" tabindex="-1"></a>  <span class="at">Survived =</span> <span class="fu">rbinom</span>(<span class="dv">800</span>, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
-<span id="cb310-8"><a href="logistic-regression.html#cb310-8" tabindex="-1"></a>  <span class="at">Sex =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>), <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)),</span>
-<span id="cb310-9"><a href="logistic-regression.html#cb310-9" tabindex="-1"></a>  <span class="at">Age =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">95</span>, <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb310-10"><a href="logistic-regression.html#cb310-10" tabindex="-1"></a>  <span class="at">Pclass =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;3&quot;</span>))</span>
-<span id="cb310-11"><a href="logistic-regression.html#cb310-11" tabindex="-1"></a>)</span>
-<span id="cb310-12"><a href="logistic-regression.html#cb310-12" tabindex="-1"></a></span>
-<span id="cb310-13"><a href="logistic-regression.html#cb310-13" tabindex="-1"></a><span class="co"># Adjust the dataset to create significant relationships</span></span>
-<span id="cb310-14"><a href="logistic-regression.html#cb310-14" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">10</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">10</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.1</span>)</span>
-<span id="cb310-15"><a href="logistic-regression.html#cb310-15" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">10</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">10</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.9</span>)</span>
-<span id="cb310-16"><a href="logistic-regression.html#cb310-16" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
-<span id="cb310-17"><a href="logistic-regression.html#cb310-17" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.8</span>)</span>
-<span id="cb310-18"><a href="logistic-regression.html#cb310-18" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.2</span>)</span>
-<span id="cb310-19"><a href="logistic-regression.html#cb310-19" tabindex="-1"></a></span>
-<span id="cb310-20"><a href="logistic-regression.html#cb310-20" tabindex="-1"></a><span class="co"># Ensure Pclass has &quot;1&quot; as the reference level</span></span>
-<span id="cb310-21"><a href="logistic-regression.html#cb310-21" tabindex="-1"></a>titanic_data<span class="sc">$</span>Pclass <span class="ot">&lt;-</span> <span class="fu">relevel</span>(titanic_data<span class="sc">$</span>Pclass, <span class="at">ref =</span> <span class="st">&quot;1&quot;</span>)</span>
-<span id="cb310-22"><a href="logistic-regression.html#cb310-22" tabindex="-1"></a></span>
-<span id="cb310-23"><a href="logistic-regression.html#cb310-23" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
-<span id="cb310-24"><a href="logistic-regression.html#cb310-24" tabindex="-1"></a></span>
-<span id="cb310-25"><a href="logistic-regression.html#cb310-25" tabindex="-1"></a><span class="co"># Exponentiate coefficients to get odds ratios</span></span>
-<span id="cb310-26"><a href="logistic-regression.html#cb310-26" tabindex="-1"></a></span>
-<span id="cb310-27"><a href="logistic-regression.html#cb310-27" tabindex="-1"></a></span>
-<span id="cb310-28"><a href="logistic-regression.html#cb310-28" tabindex="-1"></a><span class="co"># Display the results</span></span></code></pre></div>
+<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="logistic-regression.html#cb311-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
+<span id="cb311-2"><a href="logistic-regression.html#cb311-2" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb311-3"><a href="logistic-regression.html#cb311-3" tabindex="-1"></a></span>
+<span id="cb311-4"><a href="logistic-regression.html#cb311-4" tabindex="-1"></a><span class="co"># Generate a new example dataset with significant effects</span></span>
+<span id="cb311-5"><a href="logistic-regression.html#cb311-5" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb311-6"><a href="logistic-regression.html#cb311-6" tabindex="-1"></a>titanic_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb311-7"><a href="logistic-regression.html#cb311-7" tabindex="-1"></a>  <span class="at">Survived =</span> <span class="fu">rbinom</span>(<span class="dv">800</span>, <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.5</span>),</span>
+<span id="cb311-8"><a href="logistic-regression.html#cb311-8" tabindex="-1"></a>  <span class="at">Sex =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>), <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb311-9"><a href="logistic-regression.html#cb311-9" tabindex="-1"></a>  <span class="at">Age =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">95</span>, <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb311-10"><a href="logistic-regression.html#cb311-10" tabindex="-1"></a>  <span class="at">Pclass =</span> <span class="fu">factor</span>(<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">800</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;3&quot;</span>))</span>
+<span id="cb311-11"><a href="logistic-regression.html#cb311-11" tabindex="-1"></a>)</span>
+<span id="cb311-12"><a href="logistic-regression.html#cb311-12" tabindex="-1"></a></span>
+<span id="cb311-13"><a href="logistic-regression.html#cb311-13" tabindex="-1"></a><span class="co"># Adjust the dataset to create significant relationships</span></span>
+<span id="cb311-14"><a href="logistic-regression.html#cb311-14" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">10</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&gt;</span> <span class="dv">10</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.1</span>)</span>
+<span id="cb311-15"><a href="logistic-regression.html#cb311-15" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">10</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Age <span class="sc">&lt;=</span> <span class="dv">10</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.9</span>)</span>
+<span id="cb311-16"><a href="logistic-regression.html#cb311-16" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Sex <span class="sc">==</span> <span class="st">&quot;Female&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span>
+<span id="cb311-17"><a href="logistic-regression.html#cb311-17" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;1&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.8</span>)</span>
+<span id="cb311-18"><a href="logistic-regression.html#cb311-18" tabindex="-1"></a>titanic_data<span class="sc">$</span>Survived[titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="fu">sum</span>(titanic_data<span class="sc">$</span>Pclass <span class="sc">==</span> <span class="st">&quot;3&quot;</span>), <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.2</span>)</span>
+<span id="cb311-19"><a href="logistic-regression.html#cb311-19" tabindex="-1"></a></span>
+<span id="cb311-20"><a href="logistic-regression.html#cb311-20" tabindex="-1"></a><span class="co"># Ensure Pclass has &quot;1&quot; as the reference level</span></span>
+<span id="cb311-21"><a href="logistic-regression.html#cb311-21" tabindex="-1"></a>titanic_data<span class="sc">$</span>Pclass <span class="ot">&lt;-</span> <span class="fu">relevel</span>(titanic_data<span class="sc">$</span>Pclass, <span class="at">ref =</span> <span class="st">&quot;1&quot;</span>)</span>
+<span id="cb311-22"><a href="logistic-regression.html#cb311-22" tabindex="-1"></a></span>
+<span id="cb311-23"><a href="logistic-regression.html#cb311-23" tabindex="-1"></a><span class="co"># Fit the logistic regression model</span></span>
+<span id="cb311-24"><a href="logistic-regression.html#cb311-24" tabindex="-1"></a></span>
+<span id="cb311-25"><a href="logistic-regression.html#cb311-25" tabindex="-1"></a><span class="co"># Exponentiate coefficients to get odds ratios</span></span>
+<span id="cb311-26"><a href="logistic-regression.html#cb311-26" tabindex="-1"></a></span>
+<span id="cb311-27"><a href="logistic-regression.html#cb311-27" tabindex="-1"></a></span>
+<span id="cb311-28"><a href="logistic-regression.html#cb311-28" tabindex="-1"></a><span class="co"># Display the results</span></span></code></pre></div>
 <ul>
 <li><strong>Interpretation</strong>:</li>
 </ul>
@@ -1717,19 +1716,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="exercise-2-visualizing-logistic-regression-results" class="section level3 hasAnchor" number="13.8.2">
 <h3><span class="header-section-number">13.8.2</span> Exercise 2: Visualizing Logistic Regression Results<a href="logistic-regression.html#exercise-2-visualizing-logistic-regression-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Task</strong>: Create a plot to visualize the predicted probabilities of survival (<code>Survived</code>) based on <code>Age</code>. Use the <code>ggplot2</code> package to plot the logistic regression curve.</p>
-<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="logistic-regression.html#cb311-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
-<span id="cb311-2"><a href="logistic-regression.html#cb311-2" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb311-3"><a href="logistic-regression.html#cb311-3" tabindex="-1"></a></span>
-<span id="cb311-4"><a href="logistic-regression.html#cb311-4" tabindex="-1"></a><span class="co"># Generate predicted probabilities</span></span>
-<span id="cb311-5"><a href="logistic-regression.html#cb311-5" tabindex="-1"></a>titanic_data<span class="sc">$</span>predicted_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> titanic_data, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
-<span id="cb311-6"><a href="logistic-regression.html#cb311-6" tabindex="-1"></a></span>
-<span id="cb311-7"><a href="logistic-regression.html#cb311-7" tabindex="-1"></a><span class="co"># Plot the logistic regression curve</span></span></code></pre></div>
+<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="logistic-regression.html#cb312-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
+<span id="cb312-2"><a href="logistic-regression.html#cb312-2" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb312-3"><a href="logistic-regression.html#cb312-3" tabindex="-1"></a></span>
+<span id="cb312-4"><a href="logistic-regression.html#cb312-4" tabindex="-1"></a><span class="co"># Generate predicted probabilities</span></span>
+<span id="cb312-5"><a href="logistic-regression.html#cb312-5" tabindex="-1"></a>titanic_data<span class="sc">$</span>predicted_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, <span class="at">newdata =</span> titanic_data, <span class="at">type =</span> <span class="st">&quot;response&quot;</span>)</span>
+<span id="cb312-6"><a href="logistic-regression.html#cb312-6" tabindex="-1"></a></span>
+<span id="cb312-7"><a href="logistic-regression.html#cb312-7" tabindex="-1"></a><span class="co"># Plot the logistic regression curve</span></span></code></pre></div>
 </div>
 <div id="exercise-3-interpreting-odds-ratios" class="section level3 hasAnchor" number="13.8.3">
 <h3><span class="header-section-number">13.8.3</span> Exercise 3: Interpreting Odds Ratios<a href="logistic-regression.html#exercise-3-interpreting-odds-ratios" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Task</strong>: Interpret the odds ratios obtained in Exercise 1. Specifically, discuss the practical significance of the odds ratios for <code>Sex</code>, <code>Age</code>, and <code>Pclass</code> in predicting survival on the Titanic.</p>
-<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="logistic-regression.html#cb312-1" tabindex="-1"></a><span class="co"># Odds ratios interpretation (example text)</span></span>
-<span id="cb312-2"><a href="logistic-regression.html#cb312-2" tabindex="-1"></a><span class="co"># Odds ratio for Sex (Female vs. Male): If the odds ratio for &#39;Female&#39; is 2.5, it means that females were 2.5 times more likely to survive compared to males, holding all other factors constant.</span></span></code></pre></div>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="logistic-regression.html#cb313-1" tabindex="-1"></a><span class="co"># Odds ratios interpretation (example text)</span></span>
+<span id="cb313-2"><a href="logistic-regression.html#cb313-2" tabindex="-1"></a><span class="co"># Odds ratio for Sex (Female vs. Male): If the odds ratio for &#39;Female&#39; is 2.5, it means that females were 2.5 times more likely to survive compared to males, holding all other factors constant.</span></span></code></pre></div>
 <ul>
 <li><strong>Odds Ratios</strong>:</li>
 </ul>
@@ -1737,13 +1736,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="exercise-4-checking-model-fit" class="section level3 hasAnchor" number="13.8.4">
 <h3><span class="header-section-number">13.8.4</span> Exercise 4: Checking Model Fit<a href="logistic-regression.html#exercise-4-checking-model-fit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Task</strong>: Assess the fit of the logistic regression model you fitted in Exercise 1. Plot an ROC curve. Discuss the ROC.</p>
-<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="logistic-regression.html#cb313-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
-<span id="cb313-2"><a href="logistic-regression.html#cb313-2" tabindex="-1"></a><span class="fu">library</span>(ResourceSelection)</span>
-<span id="cb313-3"><a href="logistic-regression.html#cb313-3" tabindex="-1"></a><span class="fu">library</span>(pROC)</span>
-<span id="cb313-4"><a href="logistic-regression.html#cb313-4" tabindex="-1"></a></span>
-<span id="cb313-5"><a href="logistic-regression.html#cb313-5" tabindex="-1"></a><span class="co"># ROC curve</span></span>
-<span id="cb313-6"><a href="logistic-regression.html#cb313-6" tabindex="-1"></a></span>
-<span id="cb313-7"><a href="logistic-regression.html#cb313-7" tabindex="-1"></a><span class="co"># Plot ROC curve</span></span></code></pre></div>
+<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="logistic-regression.html#cb314-1" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
+<span id="cb314-2"><a href="logistic-regression.html#cb314-2" tabindex="-1"></a><span class="fu">library</span>(ResourceSelection)</span>
+<span id="cb314-3"><a href="logistic-regression.html#cb314-3" tabindex="-1"></a><span class="fu">library</span>(pROC)</span>
+<span id="cb314-4"><a href="logistic-regression.html#cb314-4" tabindex="-1"></a></span>
+<span id="cb314-5"><a href="logistic-regression.html#cb314-5" tabindex="-1"></a><span class="co"># ROC curve</span></span>
+<span id="cb314-6"><a href="logistic-regression.html#cb314-6" tabindex="-1"></a></span>
+<span id="cb314-7"><a href="logistic-regression.html#cb314-7" tabindex="-1"></a><span class="co"># Plot ROC curve</span></span></code></pre></div>
 <ul>
 <li><strong>ROC Curve</strong>:</li>
 </ul>
